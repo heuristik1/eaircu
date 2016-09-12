@@ -1,0 +1,263 @@
+import numpy as np
+import globals as GLB
+import spidev, os, sys, math
+from datetime import datetime
+import RPi.GPIO as GPIO  # Import GPIO library
+import time
+import logging
+import cPickle
+import pymongo
+from os import path
+
+class rester():
+
+    def __init__(self):
+        self.logger = logging.getLogger('root')
+        self.createLogFilePath()
+        self.initSPI()
+        #Status Pin Definitions:
+        Ycoilstat = 5
+        Bcoilstat = 6
+        Gcoilstat = 18
+        Rcoilstat = 24
+        Allcoilstat = [Rcoilstat,Ycoilstat,Bcoilstat,Gcoilstat]
+        #Control Pin Definitions:
+        Ycontrol = 19
+        Bcontrol = 20
+        Gcontrol = 21
+        Rcontrol = 26
+        Allcontrols = [Ycontrol,Bcontrol,Gcontrol,Rcontrol]
+        # Pin Setup:
+        GPIO.setmode(GPIO.BCM) # Broadcom pin-numbering scheme
+        # Set Status Pin to input
+        GPIO.setup(Allcoils, GPIO.IN)
+
+        #Set Event Detection on Status Change
+        GPIO.add_event_detect(Ycoilstat, GPIO.BOTH)
+        GPIO.add_event_detect(Bcoilstat, GPIO.BOTH)
+        GPIO.add_event_detect(Gcoilstat, GPIO.BOTH)
+        GPIO.add_event_detect(Rcoilstat, GPIO.BOTH)
+        # Set Control Pin to output
+        GPIO.output (Allcontrols,0)
+        GPIO.setup(Allcontrols, GPIO.OUT)
+
+        #Time Variables
+        bootdelay = 3600 # seconds
+        charge2restdelay = 86400
+        maxrest = .20 # 20% of Time in Service
+        minrest = 604800 #7 DAYS
+        minoutage = 600 #10 mins
+
+    def getCoilState(self,Allcoilstat):
+        for coil in Allcoils:
+            now = datetime.now()
+            CoilChangeTime = now.strftime("%Y-%m-%d %H:%M:%S")
+            if GPIO.event_detected(coil, GPIO.RISING):
+                coil.STARTrest = "START,%d" % (CoilChangeTime)
+            elif GPIO.event_detected(coil, GPIO.FALLING):
+                coil.STOPrest = "STOP,%d" % (CoilChangeTime)
+
+            return
+
+
+    def getCoilbirthdays (self,Allcoils):
+        Allcoils = [Bcoil,Gcoil,Rcoil,Ycoil]
+        for coil in Allcoils:
+          coilday = "%d.bday" % (coil)
+          try:
+            if not os.path.exists (coilday):
+                open(coilday, 'w').close()
+          with open(coilday, 'r') as f:
+              coilbday = path.getmtime(coilday)
+              file.close(coilday)
+        return coilbday
+
+    def serviceduration (self,coilbday):
+        now = datetime.now()
+        for coil in Allcoils:
+            serviceduration = now - coilbday
+
+    def getLowRestCoil (self,self.bdays)
+
+
+
+
+xResttime/xStarttime = xRestState
+
+# return the lowest valued string
+RestCoil =  np.amin(xRestState)
+
+# At this point we rest string and write RestCoil to activeCoil Global Variables (to persist reboot)
+If ActiveString != RestCoil
+              Write ActiveString to PreviousRestString
+               AND Write RestCoil to ActiveString
+Else
+              Continue
+
+# now we set the pin to Low
+If GPIO.input(restCoil,0) AND GPIO.input(restControl,1)
+     GPIO.output(restControl,0)
+Elseif
+   GPIO.input(restcoil,1) AND GPIO.input(restControl,0)
+           Continue
+Elseif
+    #We need an alarm function if the string is in the wrong state.
+    GPIO.input(restcoil,0) AND GPIO.input(restcontrol,1)
+         ALARM
+Elseif
+    GPIO.input(restcoil,1) AND GPIO.input(restcontrol,1)
+       GPIO.output(restControl,0)
+#we need to talk the above section out a bit more, specifically about reboot persistence.
+
+#last thing we need to do is log the durations to a file for each strings rest time.
+#these durations are going to be used in the customer portal to show the amount of time each string has been rested.
+ # store info into file
+    def storeToFile(self, fileName, data, append=True):
+        if append:
+            myFileOutput = open(fileName, "a")
+        else:
+            myFileOutput = open(fileName, "w")
+        myFileOutput.write(data)
+        myFileOutput.close()
+        return
+
+   def rw_bday (self, filename)
+        now = datetime.now
+        if not os.path.exists(filename):
+            open(f_loc, 'w').close()
+
+        with open(f_loc) as f:
+            f.write (string, now)
+
+from datetime import datetime, timedelta
+from time import sleep
+import logging
+
+
+class CoilString:
+    REST = 0
+    ACTIVE = 1
+
+    def __init__(self, bday=datetime.utcnow()):
+        self.logger = logging.getLogger(__name__)
+        self.bday = bday  # datetime
+        self.rest_periods = []  # durations
+        self.active_periods = []  # durations
+        self.last_state = CoilString.ACTIVE
+        self.last_event_start = datetime.utcnow()
+
+    def rest(self):
+        self.logger.info("Resting!")
+        if self.last_state == CoilString.REST:
+            self.logger.warning("Already in rest state!")
+            pass  # REST to REST has no effect
+        self.last_state = CoilString.REST
+        now = datetime.utcnow()
+        self.active_periods.append(now - self.last_event_start)
+        self.last_event_start = now
+
+    def activate(self):
+        self.logger.info("Activating!")
+        if self.last_state == CoilString.ACTIVE:
+            self.logger.warning("Already in active state!")
+            pass  # ACTIVE to ACTIVE has no effect
+        self.last_state = CoilString.ACTIVE
+        now = datetime.utcnow()
+        self.rest_periods.append(now - self.last_event_start)
+        self.last_event_start = now
+
+    def report_rest_percentage(self):
+        self.logger.info("Running report...")
+        tot_time_since_bday = (datetime.utcnow() - self.bday).seconds  # duration
+        time_at_rest = sum([x.seconds for x in self.rest_periods])
+        return time_at_rest / float(tot_time_since_bday) * 100
+
+    def write_stats(self):
+        # thread on timer for 10mins...write to file/db etc....
+        client = pymongo.MongoClient('127.0.0.1', 27017)
+        db = client["RestDB"]   #create/connect to the Library Database
+
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+    cs = CoilString()
+    cs.activate()  # no-op...already active
+    cs.rest()
+    sleep(10)  # rest 10
+    cs.activate()
+    sleep(10)
+    print "RESTed for {}% of lifetime".format(cs.report_rest_percentage())
+
+
+
+    #!/usr/bin/python
+# coding=utf-8
+#
+# controller_log.py - Log controller to periodically query influxdb
+#                     and append a log file
+#
+
+import datetime
+import RPi.GPIO as GPIO
+import logging
+import subprocess
+import threading
+import time
+import timeit
+from influxdb import InfluxDBClient
+
+from config import LOG_PATH
+from config import SQL_DATABASE_MYCODO
+from config import INFLUXDB_HOST
+from config import INFLUXDB_PORT
+from config import INFLUXDB_USER
+from config import INFLUXDB_PASSWORD
+from config import INFLUXDB_DATABASE
+from config import MAX_AMPS
+from databases.mycodo_db.models import Relay
+from databases.mycodo_db.models import RelayConditional
+from databases.mycodo_db.models import SMTP
+from databases.utils import session_scope
+from mycodo_client import DaemonControl
+from daemonutils import email, write_influxdb
+
+MYCODO_DB_PATH = 'sqlite:///' + SQL_DATABASE_MYCODO
+
+
+class RelayController(threading.Thread):
+    """
+    class for controlling relays
+
+    """
+
+    def __init__(self, logger):
+        threading.Thread.__init__(self)
+
+        self.thread_startup_timer = timeit.default_timer()
+        self.thread_shutdown_timer = 0
+        self.logger = logger
+        self.control = DaemonControl()
+
+        self.relay_id = {}
+        self.relay_name = {}
+        self.relay_pin = {}
+        self.relay_amps = {}
+        self.relay_trigger = {}
+        self.relay_start_state = {}
+        self.relay_on_until = {}
+        self.relay_last_duration = {}
+        self.relay_on_duration = {}
+
+        self.logger.debug("[Relay] Initializing relays")
+        try:
+            # Setup GPIO (BCM numbering) and initialize all relays in database
+            GPIO.setmode(GPIO.BCM)
+            GPIO.setwarnings(False)
+
+            with session_scope(MYCODO_DB_PATH) as new_session:
+                smtp = new_session.query(SMTP).first()
+                self.smtp_max_count = smtp.hourly_max
+                self.smtp_wait_time = time.time() + 3600
+                self.smtp_timer = time.time()
+                self.email_count = 0
+                self.allowed_to_send_notice = True

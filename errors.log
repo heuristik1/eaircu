@@ -1,0 +1,28 @@
+2016-09-09 18:25:30,236 - coilstring.py:69 -            _run_rest() ] Rest thread interrupted unsupported type for timedelta seconds component: str
+2016-09-09 18:25:31,242 - coilstring.py:69 -            _run_rest() ] Rest thread interrupted unsupported type for timedelta seconds component: str
+2016-09-09 18:25:32,253 - coilstring.py:69 -            _run_rest() ] Rest thread interrupted unsupported type for timedelta seconds component: str
+2016-09-09 18:25:33,262 - coilstring.py:69 -            _run_rest() ] Rest thread interrupted unsupported type for timedelta seconds component: str
+2016-09-09 18:25:34,273 - coilstring.py:69 -            _run_rest() ] Rest thread interrupted unsupported type for timedelta seconds component: str
+2016-09-09 18:25:35,283 - coilstring.py:69 -            _run_rest() ] Rest thread interrupted unsupported type for timedelta seconds component: str
+2016-09-09 18:25:36,293 - coilstring.py:69 -            _run_rest() ] Rest thread interrupted unsupported type for timedelta seconds component: str
+2016-09-09 18:25:37,302 - coilstring.py:69 -            _run_rest() ] Rest thread interrupted unsupported type for timedelta seconds component: str
+2016-09-09 18:56:27,752 - coilstring.py:70 -            _run_rest() ] Rest thread interrupted unsupported operand type(s) for +: 'datetime.datetime' and 'int'
+2016-09-09 18:56:58,765 - coilstring.py:70 -            _run_rest() ] Rest thread interrupted unsupported operand type(s) for +: 'datetime.datetime' and 'int'
+2016-09-11 03:14:52,673 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state Channel must be an integer or list/tuple of integers
+2016-09-11 03:14:53,725 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state Channel must be an integer or list/tuple of integers
+2016-09-11 03:14:54,795 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state Channel must be an integer or list/tuple of integers
+2016-09-11 03:14:55,866 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state Channel must be an integer or list/tuple of integers
+2016-09-11 03:14:56,920 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state Channel must be an integer or list/tuple of integers
+2016-09-11 03:14:57,969 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state Channel must be an integer or list/tuple of integers
+2016-09-11 03:14:59,019 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state Channel must be an integer or list/tuple of integers
+2016-09-11 03:15:00,094 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state Channel must be an integer or list/tuple of integers
+2016-09-11 03:37:04,430 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:05,480 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:06,531 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:07,582 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:08,632 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:09,705 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:10,778 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:11,832 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:12,885 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:13,939 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT

@@ -1,0 +1,41 @@
+[mongodb]
+host=localhost
+port=27017
+db=coilstring
+collection=rest
+
+[device]
+name=vietnam
+resolution=10
+
+[strings]
+Y=2016-09-08,19,5
+B=2016-09-01,20,6
+G=2016-08-29,21,18
+R=2016-08-28,26,24
+
+[control_pins]
+Y=19
+B=20
+G=21
+R=26
+
+[status_pins]
+Y=5
+B=6
+G=18
+R=24
+
+[allstatpins]
+statpins = 5,4,18,24
+
+[allcontrolpins]
+controlpins = [19,20,21,26]
+
+[TimeVariables]
+bootdelay = 3600 # seconds
+charge2restdelay = 86400
+maxrest = .20 # 20% of Time in Service
+minrest = 604800 #7 DAYS
+minoutage = 600 #10 mins
+

@@ -1,0 +1,1671 @@
+2016-09-09 18:25:30,230 - coilstring.py:177 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:25:30,231 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:30,231 - coilstring.py:177 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:25:30,232 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:30,232 - coilstring.py:177 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:25:30,233 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:30,233 - coilstring.py:177 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:25:30,233 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:30,234 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:30,234 - run.py:106 -             <module>() ] Would place string y in a rest state for 35586.0468236 seconds 
+2016-09-09 18:25:30,235 - coilstring.py:139 -                 rest() ] Resting string y
+2016-09-09 18:25:30,235 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:25:30,236 - coilstring.py:69 -            _run_rest() ] Rest thread interrupted unsupported type for timedelta seconds component: str
+2016-09-09 18:25:31,237 - coilstring.py:177 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:25:31,238 - coilstring.py:177 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:25:31,238 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:31,239 - coilstring.py:177 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:25:31,239 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:31,240 - coilstring.py:177 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:25:31,240 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:31,241 - run.py:106 -             <module>() ] Would place string y in a rest state for 35586.2482136 seconds 
+2016-09-09 18:25:31,241 - coilstring.py:139 -                 rest() ] Resting string y
+2016-09-09 18:25:31,242 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:25:31,242 - coilstring.py:69 -            _run_rest() ] Rest thread interrupted unsupported type for timedelta seconds component: str
+2016-09-09 18:25:32,243 - coilstring.py:177 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:25:32,245 - coilstring.py:177 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:25:32,246 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:32,247 - coilstring.py:177 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:25:32,248 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:32,248 - coilstring.py:177 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:25:32,250 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:32,251 - run.py:106 -             <module>() ] Would place string y in a rest state for 35586.4500992 seconds 
+2016-09-09 18:25:32,251 - coilstring.py:139 -                 rest() ] Resting string y
+2016-09-09 18:25:32,252 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:25:32,253 - coilstring.py:69 -            _run_rest() ] Rest thread interrupted unsupported type for timedelta seconds component: str
+2016-09-09 18:25:33,254 - coilstring.py:177 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:25:33,255 - coilstring.py:177 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:25:33,257 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:33,257 - coilstring.py:177 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:25:33,258 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:33,258 - coilstring.py:177 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:25:33,259 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:33,260 - run.py:106 -             <module>() ] Would place string y in a rest state for 35586.6520146 seconds 
+2016-09-09 18:25:33,261 - coilstring.py:139 -                 rest() ] Resting string y
+2016-09-09 18:25:33,261 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:25:33,262 - coilstring.py:69 -            _run_rest() ] Rest thread interrupted unsupported type for timedelta seconds component: str
+2016-09-09 18:25:34,263 - coilstring.py:177 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:25:34,265 - coilstring.py:177 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:25:34,266 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:34,267 - coilstring.py:177 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:25:34,268 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:34,268 - coilstring.py:177 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:25:34,270 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:34,271 - run.py:106 -             <module>() ] Would place string y in a rest state for 35586.854129 seconds 
+2016-09-09 18:25:34,272 - coilstring.py:139 -                 rest() ] Resting string y
+2016-09-09 18:25:34,272 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:25:34,273 - coilstring.py:69 -            _run_rest() ] Rest thread interrupted unsupported type for timedelta seconds component: str
+2016-09-09 18:25:35,274 - coilstring.py:177 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:25:35,276 - coilstring.py:177 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:25:35,277 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:35,277 - coilstring.py:177 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:25:35,279 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:35,279 - coilstring.py:177 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:25:35,280 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:35,281 - run.py:106 -             <module>() ] Would place string y in a rest state for 35587.0561668 seconds 
+2016-09-09 18:25:35,282 - coilstring.py:139 -                 rest() ] Resting string y
+2016-09-09 18:25:35,282 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:25:35,283 - coilstring.py:69 -            _run_rest() ] Rest thread interrupted unsupported type for timedelta seconds component: str
+2016-09-09 18:25:36,284 - coilstring.py:177 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:25:36,285 - coilstring.py:177 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:25:36,287 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:36,287 - coilstring.py:177 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:25:36,288 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:36,288 - coilstring.py:177 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:25:36,290 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:36,291 - run.py:106 -             <module>() ] Would place string y in a rest state for 35587.2580918 seconds 
+2016-09-09 18:25:36,291 - coilstring.py:139 -                 rest() ] Resting string y
+2016-09-09 18:25:36,292 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:25:36,293 - coilstring.py:69 -            _run_rest() ] Rest thread interrupted unsupported type for timedelta seconds component: str
+2016-09-09 18:25:37,294 - coilstring.py:177 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:25:37,295 - coilstring.py:177 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:25:37,296 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:37,297 - coilstring.py:177 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:25:37,298 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:37,298 - coilstring.py:177 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:25:37,299 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:25:37,300 - run.py:106 -             <module>() ] Would place string y in a rest state for 35587.4599272 seconds 
+2016-09-09 18:25:37,300 - coilstring.py:139 -                 rest() ] Resting string y
+2016-09-09 18:25:37,300 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:25:37,302 - coilstring.py:69 -            _run_rest() ] Rest thread interrupted unsupported type for timedelta seconds component: str
+2016-09-09 18:26:34,898 - coilstring.py:177 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:26:34,899 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:26:34,899 - coilstring.py:177 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:26:34,900 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:26:34,900 - coilstring.py:177 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:26:34,901 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:26:34,901 - coilstring.py:177 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:26:34,901 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:26:34,902 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:26:34,902 - run.py:106 -             <module>() ] Would place string y in a rest state for 35598.9804124 seconds 
+2016-09-09 18:26:34,902 - coilstring.py:139 -                 rest() ] Resting string y
+2016-09-09 18:26:34,902 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:27:21,327 - coilstring.py:177 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:27:21,327 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:27:21,328 - coilstring.py:177 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:27:21,328 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:27:21,328 - coilstring.py:177 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:27:21,329 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:27:21,329 - coilstring.py:177 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:27:21,330 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:27:21,330 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:27:21,330 - run.py:106 -             <module>() ] Would place string y in a rest state for 35608.2660306 seconds 
+2016-09-09 18:27:21,330 - coilstring.py:139 -                 rest() ] Resting string y
+2016-09-09 18:27:21,331 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:27:31,342 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:27:41,354 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:27:51,366 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:28:01,379 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:28:11,391 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:28:21,403 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:29:46,708 - coilstring.py:177 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:29:46,709 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:29:46,709 - coilstring.py:177 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:29:46,710 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:29:46,710 - coilstring.py:177 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:29:46,710 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:29:46,710 - coilstring.py:177 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:29:46,711 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:29:46,711 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:29:46,711 - run.py:106 -             <module>() ] Would place string y in a rest state for 35637.3422982 seconds 
+2016-09-09 18:29:46,712 - coilstring.py:139 -                 rest() ] Resting string y
+2016-09-09 18:29:46,712 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:29:56,724 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:30:06,737 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:30:16,742 - coilstring.py:157 -             activate() ] Activating string y
+2016-09-09 18:30:16,742 - run.py:50 -      active_callback() ] y was placed into an active state
+2016-09-09 18:30:16,749 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:30:17,745 - coilstring.py:177 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:30:17,748 - coilstring.py:177 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:30:17,749 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:30:17,750 - coilstring.py:177 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:30:17,751 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:30:17,752 - coilstring.py:177 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:30:17,753 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:30:17,754 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:30:17,755 - run.py:106 -             <module>() ] Would place string r in a rest state for 225723.550749 seconds 
+2016-09-09 18:30:17,755 - coilstring.py:139 -                 rest() ] Resting string r
+2016-09-09 18:30:17,755 - run.py:39 -        rest_callback() ] r was placed into a rest state
+2016-09-09 18:30:26,761 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:30:27,766 - coilstring.py:55 -            _run_rest() ] Updating duration for r by 10
+2016-09-09 18:30:36,773 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:30:37,777 - coilstring.py:55 -            _run_rest() ] Updating duration for r by 10
+2016-09-09 18:30:46,783 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:30:47,779 - coilstring.py:157 -             activate() ] Activating string r
+2016-09-09 18:30:47,780 - run.py:50 -      active_callback() ] r was placed into an active state
+2016-09-09 18:30:47,789 - coilstring.py:55 -            _run_rest() ] Updating duration for r by 10
+2016-09-09 18:30:48,784 - coilstring.py:177 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:30:48,786 - coilstring.py:177 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:30:48,788 - coilstring.py:177 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:30:48,789 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:30:48,789 - coilstring.py:177 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:30:48,790 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:30:48,792 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:30:48,792 - run.py:106 -             <module>() ] Would place string b in a rest state for 156609.758251 seconds 
+2016-09-09 18:30:48,792 - coilstring.py:139 -                 rest() ] Resting string b
+2016-09-09 18:30:48,793 - run.py:39 -        rest_callback() ] b was placed into a rest state
+2016-09-09 18:30:56,795 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:30:57,802 - coilstring.py:55 -            _run_rest() ] Updating duration for r by 10
+2016-09-09 18:30:58,805 - coilstring.py:55 -            _run_rest() ] Updating duration for b by 10
+2016-09-09 18:31:06,806 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:31:07,812 - coilstring.py:55 -            _run_rest() ] Updating duration for r by 10
+2016-09-09 18:31:08,817 - coilstring.py:55 -            _run_rest() ] Updating duration for b by 10
+2016-09-09 18:31:16,817 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:31:17,823 - coilstring.py:55 -            _run_rest() ] Updating duration for r by 10
+2016-09-09 18:31:18,823 - coilstring.py:157 -             activate() ] Activating string b
+2016-09-09 18:31:18,824 - run.py:50 -      active_callback() ] b was placed into an active state
+2016-09-09 18:31:18,829 - coilstring.py:55 -            _run_rest() ] Updating duration for b by 10
+2016-09-09 18:31:19,827 - coilstring.py:177 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:31:19,829 - coilstring.py:177 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:31:19,831 - coilstring.py:177 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:31:19,832 - coilstring.py:177 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:31:19,833 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:31:19,835 - coilstring.py:130 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:31:19,835 - run.py:106 -             <module>() ] Would place string g in a rest state for 208455.966876 seconds 
+2016-09-09 18:31:19,835 - coilstring.py:139 -                 rest() ] Resting string g
+2016-09-09 18:31:19,836 - run.py:39 -        rest_callback() ] g was placed into a rest state
+2016-09-09 18:31:26,828 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:31:27,834 - coilstring.py:55 -            _run_rest() ] Updating duration for r by 10
+2016-09-09 18:31:28,841 - coilstring.py:55 -            _run_rest() ] Updating duration for b by 10
+2016-09-09 18:31:29,848 - coilstring.py:55 -            _run_rest() ] Updating duration for g by 10
+2016-09-09 18:39:07,106 - coilstring.py:151 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:39:07,106 - coilstring.py:125 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:39:07,107 - coilstring.py:151 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:39:07,107 - coilstring.py:125 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:39:07,107 - coilstring.py:151 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:39:07,108 - coilstring.py:125 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:39:07,108 - coilstring.py:151 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:39:07,108 - coilstring.py:125 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:39:07,109 - coilstring.py:125 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:39:07,109 - run.py:106 -             <module>() ] Would place string y in a rest state for 35749.4218244 seconds 
+2016-09-09 18:39:07,109 - coilstring.py:134 -                 rest() ] Resting string y
+2016-09-09 18:39:07,109 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:39:17,121 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:39:27,133 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:39:37,142 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:39:47,154 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:40:47,787 - coilstring.py:151 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:40:47,788 - coilstring.py:125 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:40:47,788 - coilstring.py:151 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:40:47,789 - coilstring.py:125 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:40:47,789 - coilstring.py:151 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:40:47,789 - coilstring.py:125 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:40:47,789 - coilstring.py:151 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:40:47,790 - coilstring.py:125 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:40:47,790 - coilstring.py:125 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:40:47,790 - run.py:106 -             <module>() ] Would place string y in a rest state for 35769.5580766 seconds 
+2016-09-09 18:40:47,790 - coilstring.py:134 -                 rest() ] Resting string y
+2016-09-09 18:40:47,791 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:40:57,802 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:41:07,813 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:41:17,825 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:41:27,838 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:41:37,850 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:41:47,860 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:41:57,871 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:42:07,883 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:42:17,895 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:42:27,904 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:42:37,917 - coilstring.py:55 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:42:48,913 - coilstring.py:151 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:42:48,915 - coilstring.py:151 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:42:48,917 - coilstring.py:125 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:42:48,917 - coilstring.py:151 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:42:48,918 - coilstring.py:125 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:42:48,919 - coilstring.py:151 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:42:48,920 - coilstring.py:125 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:42:48,921 - coilstring.py:125 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:42:48,922 - run.py:106 -             <module>() ] Would place string r in a rest state for 225873.784169 seconds 
+2016-09-09 18:42:48,922 - coilstring.py:134 -                 rest() ] Resting string r
+2016-09-09 18:42:48,922 - run.py:39 -        rest_callback() ] r was placed into a rest state
+2016-09-09 18:45:31,305 - coilstring.py:160 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:45:31,306 - coilstring.py:134 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:45:31,306 - coilstring.py:160 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:45:31,306 - coilstring.py:134 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:45:31,307 - coilstring.py:160 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:45:31,307 - coilstring.py:134 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:45:31,307 - coilstring.py:160 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:45:31,308 - coilstring.py:134 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:45:31,308 - coilstring.py:134 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:45:31,309 - run.py:106 -             <module>() ] Would place string y in a rest state for 35826.2616856 seconds 
+2016-09-09 18:45:31,309 - coilstring.py:143 -                 rest() ] Resting string y
+2016-09-09 18:45:31,309 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:45:41,319 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:45:51,330 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:46:01,340 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:46:11,353 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:46:21,365 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:46:31,380 - run.py:50 -      active_callback() ] y was placed into an active state
+2016-09-09 18:46:32,367 - coilstring.py:160 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:46:32,368 - coilstring.py:160 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:46:32,370 - coilstring.py:134 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:46:32,370 - coilstring.py:160 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:46:32,371 - coilstring.py:134 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:46:32,371 - coilstring.py:160 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:46:32,372 - coilstring.py:134 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:46:32,373 - coilstring.py:134 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:46:32,374 - run.py:106 -             <module>() ] Would place string r in a rest state for 225918.474598 seconds 
+2016-09-09 18:46:32,374 - coilstring.py:143 -                 rest() ] Resting string r
+2016-09-09 18:46:32,375 - run.py:39 -        rest_callback() ] r was placed into a rest state
+2016-09-09 18:46:42,387 - coilstring.py:64 -            _run_rest() ] Updating duration for r by 10
+2016-09-09 18:50:01,334 - coilstring.py:166 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:50:01,334 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:50:01,335 - coilstring.py:166 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:50:01,335 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:50:01,335 - coilstring.py:166 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:50:01,336 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:50:01,336 - coilstring.py:166 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:50:01,336 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:50:01,337 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:50:01,337 - run.py:106 -             <module>() ] Would place string y in a rest state for 35880.267427 seconds 
+2016-09-09 18:50:01,337 - coilstring.py:149 -                 rest() ] Resting string y
+2016-09-09 18:50:01,338 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:50:11,349 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:50:21,360 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:50:31,372 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:50:41,383 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:50:51,394 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:51:01,408 - run.py:50 -      active_callback() ] y was placed into an active state
+2016-09-09 18:51:02,370 - coilstring.py:166 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:51:02,373 - coilstring.py:166 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:51:02,374 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:51:02,375 - coilstring.py:166 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:51:02,376 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:51:02,376 - coilstring.py:166 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:51:02,378 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:51:02,379 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:51:02,380 - run.py:106 -             <module>() ] Would place string r in a rest state for 225972.475751 seconds 
+2016-09-09 18:51:02,380 - coilstring.py:149 -                 rest() ] Resting string r
+2016-09-09 18:51:02,380 - run.py:39 -        rest_callback() ] r was placed into a rest state
+2016-09-09 18:52:28,806 - coilstring.py:166 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:52:28,808 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:52:28,809 - coilstring.py:166 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:52:28,810 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:52:28,811 - coilstring.py:166 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:52:28,813 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:52:28,814 - coilstring.py:166 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:52:28,816 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:52:28,818 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:52:28,818 - run.py:106 -             <module>() ] Would place string y in a rest state for 35909.7633554 seconds 
+2016-09-09 18:52:28,819 - coilstring.py:149 -                 rest() ] Resting string y
+2016-09-09 18:52:28,820 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:52:38,832 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:52:48,846 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:52:58,863 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:53:08,879 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:53:18,892 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:54:38,309 - coilstring.py:166 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:54:38,309 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:54:38,309 - coilstring.py:166 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:54:38,310 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:54:38,310 - coilstring.py:166 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:54:38,310 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:54:38,311 - coilstring.py:166 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:54:38,311 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:54:38,312 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:54:38,312 - run.py:106 -             <module>() ] Would place string y in a rest state for 35935.6623412 seconds 
+2016-09-09 18:54:38,312 - coilstring.py:149 -                 rest() ] Resting string y
+2016-09-09 18:54:38,312 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:54:48,323 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:54:58,334 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:55:08,345 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:55:18,357 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:55:28,369 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:55:38,383 - run.py:50 -      active_callback() ] y was placed into an active state
+2016-09-09 18:55:39,368 - coilstring.py:166 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:55:39,370 - coilstring.py:166 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:55:39,371 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:55:39,371 - coilstring.py:166 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:55:39,373 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:55:39,373 - coilstring.py:166 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:55:39,375 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:55:39,376 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:55:39,376 - run.py:106 -             <module>() ] Would place string r in a rest state for 226027.875076 seconds 
+2016-09-09 18:55:39,377 - coilstring.py:149 -                 rest() ] Resting string r
+2016-09-09 18:55:39,377 - run.py:39 -        rest_callback() ] r was placed into a rest state
+2016-09-09 18:56:27,748 - coilstring.py:166 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:56:27,749 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:56:27,749 - coilstring.py:166 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:56:27,749 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:56:27,749 - coilstring.py:166 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:56:27,750 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:56:27,750 - coilstring.py:166 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:56:27,751 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:56:27,751 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:56:27,751 - run.py:106 -             <module>() ] Would place string y in a rest state for 35957.5502614 seconds 
+2016-09-09 18:56:27,751 - coilstring.py:149 -                 rest() ] Resting string y
+2016-09-09 18:56:27,752 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:56:27,752 - coilstring.py:70 -            _run_rest() ] Rest thread interrupted unsupported operand type(s) for +: 'datetime.datetime' and 'int'
+2016-09-09 18:56:27,753 - coilstring.py:75 -            _run_rest() ] Adding remainder of duration for y by 0.000239000000001
+2016-09-09 18:56:27,754 - run.py:50 -      active_callback() ] y was placed into an active state
+2016-09-09 18:56:58,757 - coilstring.py:166 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:56:58,758 - coilstring.py:166 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:56:58,759 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:56:58,760 - coilstring.py:166 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:56:58,761 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:56:58,761 - coilstring.py:166 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:56:58,762 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:56:58,763 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:56:58,763 - run.py:106 -             <module>() ] Would place string r in a rest state for 226043.752548 seconds 
+2016-09-09 18:56:58,763 - coilstring.py:149 -                 rest() ] Resting string r
+2016-09-09 18:56:58,764 - run.py:39 -        rest_callback() ] r was placed into a rest state
+2016-09-09 18:56:58,765 - coilstring.py:70 -            _run_rest() ] Rest thread interrupted unsupported operand type(s) for +: 'datetime.datetime' and 'int'
+2016-09-09 18:56:58,765 - coilstring.py:75 -            _run_rest() ] Adding remainder of duration for r by 0.000420999999999
+2016-09-09 18:56:58,768 - run.py:50 -      active_callback() ] r was placed into an active state
+2016-09-09 18:57:24,986 - coilstring.py:106 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-09 18:57:24,995 - coilstring.py:106 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-09 18:57:24,995 - coilstring.py:166 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:57:24,996 - coilstring.py:166 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:57:24,997 - coilstring.py:166 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:57:24,997 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:57:24,997 - coilstring.py:166 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:57:24,998 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:57:24,998 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:57:24,998 - run.py:106 -             <module>() ] Would place string b in a rest state for 156928.99969 seconds 
+2016-09-09 18:57:24,999 - coilstring.py:149 -                 rest() ] Resting string b
+2016-09-09 18:57:24,999 - run.py:39 -        rest_callback() ] b was placed into a rest state
+2016-09-09 18:57:35,010 - coilstring.py:64 -            _run_rest() ] Updating duration for b by 10
+2016-09-09 18:57:45,022 - coilstring.py:64 -            _run_rest() ] Updating duration for b by 10
+2016-09-09 18:57:55,034 - coilstring.py:64 -            _run_rest() ] Updating duration for b by 10
+2016-09-09 18:58:05,045 - coilstring.py:64 -            _run_rest() ] Updating duration for b by 10
+2016-09-09 18:58:15,056 - coilstring.py:64 -            _run_rest() ] Updating duration for b by 10
+2016-09-09 18:58:25,069 - coilstring.py:64 -            _run_rest() ] Updating duration for b by 10
+2016-09-09 18:58:26,071 - coilstring.py:75 -            _run_rest() ] Adding remainder of duration for b by 1.000242
+2016-09-09 18:58:26,074 - run.py:50 -      active_callback() ] b was placed into an active state
+2016-09-09 18:58:27,060 - coilstring.py:166 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:58:27,062 - coilstring.py:166 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:58:27,063 - coilstring.py:166 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:58:27,064 - coilstring.py:166 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:58:27,066 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:58:27,067 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:58:27,068 - run.py:106 -             <module>() ] Would place string g in a rest state for 208781.413326 seconds 
+2016-09-09 18:58:27,068 - coilstring.py:149 -                 rest() ] Resting string g
+2016-09-09 18:58:27,068 - run.py:39 -        rest_callback() ] g was placed into a rest state
+2016-09-09 18:59:01,094 - coilstring.py:166 - report_rest_percentage() ] Running report for device y
+2016-09-09 18:59:01,094 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:59:01,094 - coilstring.py:166 - report_rest_percentage() ] Running report for device r
+2016-09-09 18:59:01,095 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:59:01,095 - coilstring.py:166 - report_rest_percentage() ] Running report for device b
+2016-09-09 18:59:01,095 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:59:01,095 - coilstring.py:166 - report_rest_percentage() ] Running report for device g
+2016-09-09 18:59:01,096 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:59:01,096 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 18:59:01,097 - run.py:106 -             <module>() ] Would place string y in a rest state for 35988.2193144 seconds 
+2016-09-09 18:59:01,097 - coilstring.py:149 -                 rest() ] Resting string y
+2016-09-09 18:59:01,097 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 18:59:11,109 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:59:21,121 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:59:31,131 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:59:41,142 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 18:59:51,154 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 19:00:01,165 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 19:00:02,168 - coilstring.py:75 -            _run_rest() ] Adding remainder of duration for y by 1.001095
+2016-09-09 19:00:02,171 - run.py:50 -      active_callback() ] y was placed into an active state
+2016-09-09 19:00:03,159 - coilstring.py:166 - report_rest_percentage() ] Running report for device y
+2016-09-09 19:00:03,160 - coilstring.py:166 - report_rest_percentage() ] Running report for device r
+2016-09-09 19:00:03,161 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:00:03,162 - coilstring.py:166 - report_rest_percentage() ] Running report for device b
+2016-09-09 19:00:03,162 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:00:03,163 - coilstring.py:166 - report_rest_percentage() ] Running report for device g
+2016-09-09 19:00:03,163 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:00:03,164 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:00:03,165 - run.py:106 -             <module>() ] Would place string r in a rest state for 226080.632836 seconds 
+2016-09-09 19:00:03,165 - coilstring.py:149 -                 rest() ] Resting string r
+2016-09-09 19:00:03,165 - run.py:39 -        rest_callback() ] r was placed into a rest state
+2016-09-09 19:00:23,619 - coilstring.py:166 - report_rest_percentage() ] Running report for device y
+2016-09-09 19:00:23,620 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:00:23,620 - coilstring.py:166 - report_rest_percentage() ] Running report for device r
+2016-09-09 19:00:23,621 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:00:23,621 - coilstring.py:166 - report_rest_percentage() ] Running report for device b
+2016-09-09 19:00:23,621 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:00:23,621 - coilstring.py:166 - report_rest_percentage() ] Running report for device g
+2016-09-09 19:00:23,622 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:00:23,622 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:00:23,623 - run.py:106 -             <module>() ] Would place string y in a rest state for 36004.7245052 seconds 
+2016-09-09 19:00:23,623 - coilstring.py:149 -                 rest() ] Resting string y
+2016-09-09 19:00:23,623 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 19:00:33,634 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 19:00:43,648 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 19:00:53,661 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 19:01:03,674 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 19:01:13,687 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 19:01:23,703 - run.py:50 -      active_callback() ] y was placed into an active state
+2016-09-09 19:01:24,660 - coilstring.py:166 - report_rest_percentage() ] Running report for device y
+2016-09-09 19:01:24,662 - coilstring.py:166 - report_rest_percentage() ] Running report for device r
+2016-09-09 19:01:24,663 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:01:24,663 - coilstring.py:166 - report_rest_percentage() ] Running report for device b
+2016-09-09 19:01:24,664 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:01:24,665 - coilstring.py:166 - report_rest_percentage() ] Running report for device g
+2016-09-09 19:01:24,666 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:01:24,667 - coilstring.py:140 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:01:24,667 - run.py:106 -             <module>() ] Would place string r in a rest state for 226096.933321 seconds 
+2016-09-09 19:01:24,667 - coilstring.py:149 -                 rest() ] Resting string r
+2016-09-09 19:01:24,668 - run.py:39 -        rest_callback() ] r was placed into a rest state
+2016-09-09 19:01:55,907 - coilstring.py:165 - report_rest_percentage() ] Running report for device y
+2016-09-09 19:01:55,908 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:01:55,908 - coilstring.py:165 - report_rest_percentage() ] Running report for device r
+2016-09-09 19:01:55,908 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:01:55,908 - coilstring.py:165 - report_rest_percentage() ] Running report for device b
+2016-09-09 19:01:55,909 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:01:55,909 - coilstring.py:165 - report_rest_percentage() ] Running report for device g
+2016-09-09 19:01:55,910 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:01:55,910 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:01:55,910 - run.py:106 -             <module>() ] Would place string y in a rest state for 36023.1820328 seconds 
+2016-09-09 19:01:55,910 - coilstring.py:148 -                 rest() ] Resting string y
+2016-09-09 19:01:55,910 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 19:02:05,922 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 19:02:15,934 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 19:02:25,947 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 19:02:35,958 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 19:02:45,969 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 19:02:55,980 - coilstring.py:74 -            _run_rest() ] Adding remainder of duration for y by 10.009795
+2016-09-09 19:02:55,982 - run.py:50 -      active_callback() ] y was placed into an active state
+2016-09-09 19:02:56,971 - coilstring.py:165 - report_rest_percentage() ] Running report for device y
+2016-09-09 19:02:56,972 - coilstring.py:165 - report_rest_percentage() ] Running report for device r
+2016-09-09 19:02:56,974 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:02:56,974 - coilstring.py:165 - report_rest_percentage() ] Running report for device b
+2016-09-09 19:02:56,976 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:02:56,976 - coilstring.py:165 - report_rest_percentage() ] Running report for device g
+2016-09-09 19:02:56,977 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:02:56,979 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:02:56,979 - run.py:106 -             <module>() ] Would place string r in a rest state for 226115.395632 seconds 
+2016-09-09 19:02:56,979 - coilstring.py:148 -                 rest() ] Resting string r
+2016-09-09 19:02:56,979 - run.py:39 -        rest_callback() ] r was placed into a rest state
+2016-09-09 19:14:49,009 - coilstring.py:165 - report_rest_percentage() ] Running report for device y
+2016-09-09 19:14:49,010 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:14:49,010 - coilstring.py:165 - report_rest_percentage() ] Running report for device r
+2016-09-09 19:14:49,011 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:14:49,011 - coilstring.py:165 - report_rest_percentage() ] Running report for device b
+2016-09-09 19:14:49,012 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:14:49,012 - coilstring.py:165 - report_rest_percentage() ] Running report for device g
+2016-09-09 19:14:49,012 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:14:49,013 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:14:49,013 - run.py:106 -             <module>() ] Would place string y in a rest state for 36177.802623 seconds 
+2016-09-09 19:14:49,013 - coilstring.py:148 -                 rest() ] Resting string y
+2016-09-09 19:14:49,014 - run.py:39 -        rest_callback() ] y was placed into a rest state
+2016-09-09 19:14:59,023 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 19:15:09,033 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 19:15:19,043 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 19:15:29,053 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 19:15:39,063 - coilstring.py:64 -            _run_rest() ] Updating duration for y by 10
+2016-09-09 19:15:49,074 - coilstring.py:74 -            _run_rest() ] Adding remainder of duration for y by 10.009367
+2016-09-09 19:15:49,076 - run.py:50 -      active_callback() ] y was placed into an active state
+2016-09-09 19:15:50,069 - coilstring.py:165 - report_rest_percentage() ] Running report for device y
+2016-09-09 19:15:50,070 - coilstring.py:165 - report_rest_percentage() ] Running report for device r
+2016-09-09 19:15:50,071 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:15:50,071 - coilstring.py:165 - report_rest_percentage() ] Running report for device b
+2016-09-09 19:15:50,072 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:15:50,072 - coilstring.py:165 - report_rest_percentage() ] Running report for device g
+2016-09-09 19:15:50,073 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:15:50,074 - coilstring.py:139 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-09 19:15:50,074 - run.py:106 -             <module>() ] Would place string r in a rest state for 226270.014705 seconds 
+2016-09-09 19:15:50,074 - coilstring.py:148 -                 rest() ] Resting string r
+2016-09-09 19:15:50,074 - run.py:39 -        rest_callback() ] r was placed into a rest state
+2016-09-11 03:00:42,603 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:00:42,633 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:00:42,661 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:02:21,139 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:02:21,167 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:02:21,195 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:02:21,223 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:13:22,283 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:13:22,312 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:13:22,344 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:13:22,372 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:13:45,607 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:13:45,634 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:13:45,663 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:13:45,691 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:14:52,508 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:14:52,535 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:14:52,563 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:14:52,591 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:14:52,593 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:14:52,635 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:14:52,645 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:14:52,655 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:14:52,671 - run.py:123 -             <module>() ] Would place string y in a rest state for 54038.0927126 seconds 
+2016-09-11 03:14:52,672 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 03:14:52,673 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state Channel must be an integer or list/tuple of integers
+2016-09-11 03:14:53,677 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:14:53,685 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:14:53,695 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:14:53,705 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:14:53,722 - run.py:123 -             <module>() ] Would place string y in a rest state for 54038.3028608 seconds 
+2016-09-11 03:14:53,724 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 03:14:53,725 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state Channel must be an integer or list/tuple of integers
+2016-09-11 03:14:54,729 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:14:54,740 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:14:54,754 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:14:54,769 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:14:54,792 - run.py:123 -             <module>() ] Would place string y in a rest state for 54038.516369 seconds 
+2016-09-11 03:14:54,793 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 03:14:54,795 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state Channel must be an integer or list/tuple of integers
+2016-09-11 03:14:55,798 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:14:55,809 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:14:55,823 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:14:55,837 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:14:55,862 - run.py:123 -             <module>() ] Would place string y in a rest state for 54038.7303584 seconds 
+2016-09-11 03:14:55,864 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 03:14:55,866 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state Channel must be an integer or list/tuple of integers
+2016-09-11 03:14:56,870 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:14:56,879 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:14:56,889 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:14:56,899 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:14:56,917 - run.py:123 -             <module>() ] Would place string y in a rest state for 54038.94188 seconds 
+2016-09-11 03:14:56,919 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 03:14:56,920 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state Channel must be an integer or list/tuple of integers
+2016-09-11 03:14:57,922 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:14:57,931 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:14:57,941 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:14:57,950 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:14:57,966 - run.py:123 -             <module>() ] Would place string y in a rest state for 54039.1517504 seconds 
+2016-09-11 03:14:57,967 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 03:14:57,969 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state Channel must be an integer or list/tuple of integers
+2016-09-11 03:14:58,972 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:14:58,980 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:14:58,990 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:14:58,999 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:14:59,016 - run.py:123 -             <module>() ] Would place string y in a rest state for 54039.3616882 seconds 
+2016-09-11 03:14:59,018 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 03:14:59,019 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state Channel must be an integer or list/tuple of integers
+2016-09-11 03:15:00,027 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:15:00,038 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:15:00,053 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:15:00,066 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:15:00,089 - run.py:123 -             <module>() ] Would place string y in a rest state for 54039.5758056 seconds 
+2016-09-11 03:15:00,092 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 03:15:00,094 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state Channel must be an integer or list/tuple of integers
+2016-09-11 03:18:16,175 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:19:16,973 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:19:17,001 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:19:17,030 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:19:17,061 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:19:17,063 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:19:17,071 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:19:17,082 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:19:17,092 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:19:17,109 - run.py:125 -             <module>() ] Would place string y in a rest state for 54090.980421 seconds 
+2016-09-11 03:19:17,112 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 03:19:27,133 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:19:37,151 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:19:47,168 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:19:57,184 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:20:07,204 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:20:17,219 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for y by 10.008551
+2016-09-11 03:20:18,168 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:20:18,180 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:20:18,194 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:20:18,208 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:20:18,231 - run.py:125 -             <module>() ] Would place string y in a rest state for 54043.1957028 seconds 
+2016-09-11 03:20:18,233 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 03:20:28,250 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:20:38,264 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:20:48,279 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:20:58,293 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:21:08,305 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:21:18,319 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for y by 10.008793
+2016-09-11 03:21:19,292 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:21:19,306 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:21:19,320 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:21:19,333 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:21:19,357 - run.py:125 -             <module>() ] Would place string y in a rest state for 53995.412016 seconds 
+2016-09-11 03:21:19,359 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 03:21:29,375 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:21:39,390 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:21:49,404 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:32:16,661 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:32:16,690 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:32:16,720 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:32:16,722 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:32:16,731 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:32:16,742 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:32:16,753 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:32:16,770 - run.py:126 -             <module>() ] Would place string y in a rest state for 54096.8951314 seconds 
+2016-09-11 03:32:16,772 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 03:32:26,787 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:32:36,803 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:32:46,815 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:32:56,830 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:33:06,844 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:33:16,861 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for y by 10.010326
+2016-09-11 03:33:17,832 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:33:17,841 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:33:17,851 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:33:17,861 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:33:17,879 - run.py:126 -             <module>() ] Would place string b in a rest state for 174411.888694 seconds 
+2016-09-11 03:33:17,881 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 03:33:27,897 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:37:04,291 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:37:04,349 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:37:04,378 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:37:04,380 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:37:04,388 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:37:04,398 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:37:04,408 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:37:04,426 - run.py:126 -             <module>() ] Would place string b in a rest state for 174447.198086 seconds 
+2016-09-11 03:37:04,428 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 03:37:04,430 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:05,433 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:37:05,441 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:37:05,451 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:37:05,460 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:37:05,477 - run.py:126 -             <module>() ] Would place string b in a rest state for 174447.408402 seconds 
+2016-09-11 03:37:05,479 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 03:37:05,480 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:06,483 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:37:06,491 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:37:06,501 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:37:06,510 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:37:06,528 - run.py:126 -             <module>() ] Would place string b in a rest state for 174447.618565 seconds 
+2016-09-11 03:37:06,529 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 03:37:06,531 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:07,533 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:37:07,542 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:37:07,552 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:37:07,561 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:37:07,579 - run.py:126 -             <module>() ] Would place string b in a rest state for 174447.828673 seconds 
+2016-09-11 03:37:07,580 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 03:37:07,582 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:08,584 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:37:08,593 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:37:08,603 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:37:08,612 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:37:08,629 - run.py:126 -             <module>() ] Would place string b in a rest state for 174448.038824 seconds 
+2016-09-11 03:37:08,631 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 03:37:08,632 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:09,635 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:37:09,647 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:37:09,662 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:37:09,676 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:37:09,701 - run.py:126 -             <module>() ] Would place string b in a rest state for 174448.252306 seconds 
+2016-09-11 03:37:09,703 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 03:37:09,705 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:10,709 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:37:10,720 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:37:10,734 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:37:10,748 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:37:10,774 - run.py:126 -             <module>() ] Would place string b in a rest state for 174448.466738 seconds 
+2016-09-11 03:37:10,776 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 03:37:10,778 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:11,781 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:37:11,789 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:37:11,799 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:37:11,810 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:37:11,829 - run.py:126 -             <module>() ] Would place string b in a rest state for 174448.678475 seconds 
+2016-09-11 03:37:11,830 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 03:37:11,832 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:12,835 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:37:12,843 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:37:12,854 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:37:12,863 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:37:12,881 - run.py:126 -             <module>() ] Would place string b in a rest state for 174448.889111 seconds 
+2016-09-11 03:37:12,883 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 03:37:12,885 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:37:13,889 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:37:13,898 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:37:13,908 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:37:13,918 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:37:13,936 - run.py:126 -             <module>() ] Would place string b in a rest state for 174449.100091 seconds 
+2016-09-11 03:37:13,937 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 03:37:13,939 - coilstring.py:168 -                 rest() ] Error trying to initiate REST state The GPIO channel has not been set up as an OUTPUT
+2016-09-11 03:40:03,753 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:40:03,784 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:40:03,812 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:40:03,840 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:40:03,842 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:40:03,851 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:40:03,860 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:40:03,869 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:40:03,887 - run.py:127 -             <module>() ] Would place string b in a rest state for 174483.090398 seconds 
+2016-09-11 03:40:03,889 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 03:40:13,906 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:40:23,919 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:40:33,934 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:40:43,949 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:40:53,964 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:41:03,976 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for b by 10.007399
+2016-09-11 03:41:04,954 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:41:04,966 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:41:04,980 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:41:04,993 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:41:05,018 - run.py:127 -             <module>() ] Would place string g in a rest state for 225995.948203 seconds 
+2016-09-11 03:41:05,021 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 03:41:15,040 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:41:25,057 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:41:35,072 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:41:45,087 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:41:55,102 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:42:05,118 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for g by 10.009808
+2016-09-11 03:42:06,084 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:42:06,096 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:42:06,111 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:42:06,124 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:42:06,151 - run.py:127 -             <module>() ] Would place string r in a rest state for 243177.104255 seconds 
+2016-09-11 03:42:06,153 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 03:42:16,168 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 03:42:26,181 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 03:42:36,195 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 03:42:46,212 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 03:42:56,227 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 03:43:06,243 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for r by 10.010819
+2016-09-11 03:43:07,213 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:43:07,225 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:43:07,240 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:43:07,253 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:43:07,278 - run.py:127 -             <module>() ] Would place string b in a rest state for 174459.760357 seconds 
+2016-09-11 03:43:07,280 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 03:43:17,298 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:43:27,311 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:45:02,123 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:45:02,182 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:45:02,210 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:45:02,212 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:45:02,220 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:45:02,231 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:45:02,240 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:45:02,257 - run.py:129 -             <module>() ] Would place string b in a rest state for 174462.756954 seconds 
+2016-09-11 03:45:02,259 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 03:45:12,275 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:45:22,289 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:45:32,303 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:45:42,319 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:45:52,334 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:46:02,350 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for b by 10.010368
+2016-09-11 03:50:56,098 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:50:56,124 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:50:56,151 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:50:56,179 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:50:56,181 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:50:56,189 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:50:56,199 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:50:56,208 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:50:56,226 - run.py:130 -             <module>() ] Would place string g in a rest state for 226054.180557 seconds 
+2016-09-11 03:50:56,227 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 03:51:06,242 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:51:16,259 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:51:26,274 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:51:54,206 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:51:54,237 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:51:54,296 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:51:54,299 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:51:54,308 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:51:54,318 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:51:54,327 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:51:54,345 - run.py:129 -             <module>() ] Would place string r in a rest state for 243234.733235 seconds 
+2016-09-11 03:51:54,347 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 03:52:04,365 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 03:52:14,381 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 03:52:24,397 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 03:52:34,412 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 03:52:44,430 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 03:52:54,448 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for r by 10.011376
+2016-09-11 03:52:55,408 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:52:55,420 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:52:55,434 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:52:55,447 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:52:55,472 - run.py:129 -             <module>() ] Would place string g in a rest state for 226048.029125 seconds 
+2016-09-11 03:52:55,474 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 03:53:05,492 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:53:15,509 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:53:25,526 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:54:22,576 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:54:22,604 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:54:22,663 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:54:22,666 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:54:22,675 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:54:22,686 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:54:22,696 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:54:22,715 - run.py:129 -             <module>() ] Would place string g in a rest state for 226035.478381 seconds 
+2016-09-11 03:54:22,717 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 03:54:32,735 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:54:42,750 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:54:52,767 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:55:02,783 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:56:24,794 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:56:24,822 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:56:24,882 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 03:56:24,883 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:56:24,892 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:56:24,902 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:56:24,911 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:56:24,930 - run.py:131 -             <module>() ] Would place string r in a rest state for 243228.838653 seconds 
+2016-09-11 03:56:24,931 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 03:56:34,948 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 03:56:44,966 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 03:56:54,982 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 03:57:04,997 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 03:57:15,012 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 03:57:25,028 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for r by 10.009327
+2016-09-11 03:57:25,987 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:57:25,999 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:57:26,013 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:57:26,025 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:57:26,050 - run.py:131 -             <module>() ] Would place string b in a rest state for 174551.504527 seconds 
+2016-09-11 03:57:26,052 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 03:57:36,071 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:57:46,088 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:57:56,102 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:58:06,119 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:58:16,134 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 03:58:26,150 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for b by 10.009614
+2016-09-11 03:58:27,113 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:58:27,122 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:58:27,132 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:58:27,141 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:58:27,160 - run.py:131 -             <module>() ] Would place string g in a rest state for 226044.367292 seconds 
+2016-09-11 03:58:27,162 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 03:58:37,176 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:58:47,193 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:58:57,210 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:59:07,227 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:59:17,244 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 03:59:27,261 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for g by 10.011328
+2016-09-11 03:59:28,231 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 03:59:28,243 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 03:59:28,257 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 03:59:28,270 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 03:59:28,293 - run.py:131 -             <module>() ] Would place string y in a rest state for 54363.1889482 seconds 
+2016-09-11 03:59:28,295 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 03:59:38,311 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:59:48,326 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 03:59:58,342 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 04:00:08,360 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 04:00:18,377 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 04:00:28,394 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for y by 10.011589
+2016-09-11 04:00:29,359 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:00:29,371 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:00:29,385 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:00:29,399 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:00:29,427 - run.py:131 -             <module>() ] Would place string r in a rest state for 243217.728141 seconds 
+2016-09-11 04:00:29,429 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 04:00:39,445 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:00:49,462 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:00:59,478 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:01:09,494 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:01:19,512 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:01:29,529 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for r by 10.011122
+2016-09-11 04:01:30,491 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:01:30,504 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:01:30,518 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:01:30,531 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:01:30,557 - run.py:131 -             <module>() ] Would place string b in a rest state for 174540.396261 seconds 
+2016-09-11 04:01:30,559 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 04:01:40,576 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:01:50,592 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:02:00,608 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:02:10,623 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:02:20,639 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:04:49,701 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:04:49,760 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:04:49,789 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:04:49,792 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:04:49,801 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:04:49,812 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:04:49,822 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:04:49,841 - run.py:133 -             <module>() ] Would place string g in a rest state for 226060.892192 seconds 
+2016-09-11 04:04:49,843 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 04:04:59,861 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:05:09,876 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:05:19,892 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:05:29,910 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:05:39,927 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:05:49,944 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for g by 10.011431
+2016-09-11 04:05:50,909 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:05:50,922 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:05:50,936 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:05:50,950 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:05:50,973 - run.py:133 -             <module>() ] Would place string r in a rest state for 243222.026727 seconds 
+2016-09-11 04:05:50,975 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 04:06:00,991 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:06:11,007 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:06:21,023 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:06:31,039 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:06:41,055 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:06:51,072 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for r by 10.011037
+2016-09-11 04:06:52,039 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:06:52,051 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:06:52,065 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:06:52,079 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:06:52,103 - run.py:133 -             <module>() ] Would place string b in a rest state for 174554.705586 seconds 
+2016-09-11 04:06:52,106 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 04:07:02,124 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:07:12,141 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:07:22,159 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:07:32,175 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:07:42,190 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:07:52,204 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for b by 10.007648
+2016-09-11 04:07:53,172 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:07:53,184 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:07:53,198 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:07:53,211 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:07:53,236 - run.py:133 -             <module>() ] Would place string g in a rest state for 226037.559183 seconds 
+2016-09-11 04:07:53,238 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 04:08:03,256 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:08:13,272 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:08:23,288 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:08:33,304 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:08:43,322 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:08:53,340 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for g by 10.011477
+2016-09-11 04:08:54,301 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:08:54,313 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:08:54,327 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:08:54,340 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:08:54,366 - run.py:133 -             <module>() ] Would place string r in a rest state for 243198.693741 seconds 
+2016-09-11 04:08:54,368 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 04:09:04,386 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:09:14,402 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:09:24,419 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:09:34,435 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:09:44,450 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:09:54,468 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for r by 10.011117
+2016-09-11 04:09:55,426 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:09:55,438 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:09:55,452 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:09:55,465 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:09:55,491 - run.py:133 -             <module>() ] Would place string g in a rest state for 226001.998697 seconds 
+2016-09-11 04:09:55,493 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 04:10:05,512 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:10:15,529 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:10:25,542 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:10:35,557 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:10:45,572 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:10:55,589 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for g by 10.011495
+2016-09-11 04:10:56,560 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:10:56,572 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:10:56,586 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:10:56,600 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:10:56,626 - run.py:133 -             <module>() ] Would place string b in a rest state for 174543.602342 seconds 
+2016-09-11 04:10:56,628 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 04:11:06,646 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:11:16,663 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:11:26,681 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:11:36,699 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:11:46,716 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:11:56,731 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for b by 10.009584
+2016-09-11 04:11:57,694 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:11:57,706 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:11:57,720 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:11:57,733 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:11:57,760 - run.py:133 -             <module>() ] Would place string r in a rest state for 243175.361468 seconds 
+2016-09-11 04:11:57,761 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 04:12:07,778 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:12:17,795 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:12:27,813 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:12:37,830 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:19:05,220 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:19:05,249 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:19:05,278 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:19:05,312 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:19:05,320 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:19:05,330 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:19:05,339 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:19:05,358 - run.py:135 -             <module>() ] Would place string r in a rest state for 243220.881595 seconds 
+2016-09-11 04:19:05,360 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 04:19:15,378 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:19:25,393 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:19:35,410 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:19:45,426 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:19:55,442 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:20:05,458 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for r by 10.009585
+2016-09-11 04:20:06,427 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:20:06,439 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:20:06,453 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:20:06,467 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:20:06,493 - run.py:135 -             <module>() ] Would place string g in a rest state for 226064.187615 seconds 
+2016-09-11 04:20:06,495 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 04:20:16,513 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:20:26,529 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:20:36,545 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:20:46,557 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:20:56,571 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:21:06,589 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for g by 10.01146
+2016-09-11 04:21:07,559 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:21:07,572 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:21:07,587 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:21:07,601 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:21:07,624 - run.py:135 -             <module>() ] Would place string y in a rest state for 54563.0434724 seconds 
+2016-09-11 04:21:07,626 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 04:21:17,643 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 04:21:27,659 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 04:21:37,688 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 04:21:47,706 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 04:21:57,721 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 04:22:07,735 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for y by 10.008606
+2016-09-11 04:22:08,692 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:22:08,704 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:22:08,718 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:22:08,732 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:22:08,759 - run.py:135 -             <module>() ] Would place string b in a rest state for 174618.019304 seconds 
+2016-09-11 04:22:08,761 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 04:22:18,775 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:22:28,793 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:22:38,809 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:22:48,824 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:22:58,839 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:23:08,856 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for b by 10.010305
+2016-09-11 04:23:09,823 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:23:09,835 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:23:09,850 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:23:09,864 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:23:09,891 - run.py:135 -             <module>() ] Would place string r in a rest state for 243209.777719 seconds 
+2016-09-11 04:23:09,893 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 04:23:19,910 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:23:29,925 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:23:39,942 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:23:49,959 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:23:59,975 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:24:09,992 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for r by 10.010213
+2016-09-11 04:24:10,957 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:24:10,969 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:24:10,984 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:24:10,998 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:24:11,025 - run.py:135 -             <module>() ] Would place string g in a rest state for 226053.082338 seconds 
+2016-09-11 04:24:11,027 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 04:24:21,044 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:24:31,061 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:24:41,078 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:24:51,094 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:25:01,107 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:25:11,123 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for g by 10.00916
+2016-09-11 04:25:12,095 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:25:12,108 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:25:12,122 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:25:12,136 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:25:12,163 - run.py:135 -             <module>() ] Would place string r in a rest state for 243174.222015 seconds 
+2016-09-11 04:25:12,165 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 04:25:22,183 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:25:32,197 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:25:42,214 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:25:52,232 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:26:02,249 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:26:12,265 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for r by 10.009821
+2016-09-11 04:26:13,229 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:26:13,241 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:26:13,256 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:26:13,270 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:26:13,296 - run.py:135 -             <module>() ] Would place string b in a rest state for 174606.916377 seconds 
+2016-09-11 04:26:13,298 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 04:26:23,316 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:26:33,333 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:26:43,351 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:26:53,370 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:27:03,386 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:27:13,403 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for b by 10.010627
+2016-09-11 04:27:14,361 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:27:14,373 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:27:14,388 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:27:14,402 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:27:14,428 - run.py:135 -             <module>() ] Would place string g in a rest state for 226029.753842 seconds 
+2016-09-11 04:27:14,431 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 04:27:24,448 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:27:34,464 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:27:44,479 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:27:54,495 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:28:04,512 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:28:14,528 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for g by 10.009217
+2016-09-11 04:28:15,497 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:28:15,510 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:28:15,525 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:28:15,538 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:28:15,567 - run.py:135 -             <module>() ] Would place string r in a rest state for 243150.89274 seconds 
+2016-09-11 04:28:15,569 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 04:32:12,903 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:32:59,654 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:32:59,683 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:32:59,711 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:32:59,743 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:32:59,752 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:32:59,762 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:32:59,771 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:32:59,790 - run.py:136 -             <module>() ] Would place string r in a rest state for 243207.738408 seconds 
+2016-09-11 04:32:59,791 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 04:33:09,805 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:33:19,821 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:33:29,838 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:33:39,854 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:34:20,199 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:34:20,229 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:34:20,259 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:34:20,292 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:34:20,300 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:34:20,310 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:34:20,320 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:34:20,339 - run.py:135 -             <module>() ] Would place string b in a rest state for 174644.315074 seconds 
+2016-09-11 04:34:20,341 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 04:34:30,354 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:34:40,369 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:34:50,385 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:35:00,401 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:35:10,414 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:35:20,429 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for b by 10.008693
+2016-09-11 04:35:21,403 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:35:21,415 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:35:21,430 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:35:21,444 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:35:21,470 - run.py:135 -             <module>() ] Would place string g in a rest state for 226067.153104 seconds 
+2016-09-11 04:35:21,472 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 04:35:31,489 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:35:41,503 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:35:51,520 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:36:01,535 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:36:11,552 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:36:21,567 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for g by 10.008078
+2016-09-11 04:36:22,538 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:36:22,551 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:36:22,565 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:36:22,579 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:36:22,605 - run.py:135 -             <module>() ] Would place string r in a rest state for 243208.300732 seconds 
+2016-09-11 04:36:22,607 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 04:36:32,622 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:36:42,637 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:36:52,653 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:37:02,671 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:37:12,687 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:37:22,705 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for r by 10.011364
+2016-09-11 04:37:23,675 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:37:23,688 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:37:23,702 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:37:23,715 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:37:23,741 - run.py:135 -             <module>() ] Would place string g in a rest state for 226031.599246 seconds 
+2016-09-11 04:37:23,744 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 04:37:33,763 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:37:43,778 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:37:53,794 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:38:03,811 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:38:13,825 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:38:23,841 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for g by 10.010324
+2016-09-11 04:38:24,812 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:38:24,824 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:38:24,840 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:38:24,854 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:38:24,875 - run.py:135 -             <module>() ] Would place string r in a rest state for 243172.743873 seconds 
+2016-09-11 04:38:24,876 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 04:38:34,890 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:38:44,907 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:38:54,924 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:39:04,942 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:39:14,958 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:39:24,974 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for r by 10.009394
+2016-09-11 04:39:25,943 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:39:25,957 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:39:25,971 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:39:25,985 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:39:26,009 - run.py:135 -             <module>() ] Would place string y in a rest state for 54722.7118456 seconds 
+2016-09-11 04:39:26,011 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 04:39:36,026 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 04:39:46,042 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 04:39:56,059 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 04:46:42,885 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:46:42,912 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:46:42,943 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:46:42,945 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:46:42,953 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:46:42,964 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:46:42,973 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:46:42,994 - run.py:132 -             <module>() ] Would place string b in a rest state for 174732.837153 seconds 
+2016-09-11 04:46:42,995 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 04:46:53,010 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:47:03,027 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:47:13,045 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:47:23,060 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:47:33,078 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:47:43,093 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for b by 10.008945
+2016-09-11 04:47:44,060 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:47:44,073 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:47:44,088 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:47:44,101 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:47:44,128 - run.py:132 -             <module>() ] Would place string r in a rest state for 243224.584657 seconds 
+2016-09-11 04:47:44,130 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 04:47:54,149 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:48:04,166 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:48:14,183 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:48:24,200 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:48:34,217 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:48:44,233 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for r by 10.010112
+2016-09-11 04:48:45,191 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:48:45,204 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:48:45,222 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:48:45,239 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:48:45,267 - run.py:132 -             <module>() ] Would place string g in a rest state for 226107.893695 seconds 
+2016-09-11 04:48:45,269 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 04:48:55,286 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:49:05,301 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:49:15,317 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:49:25,330 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:49:35,346 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 04:49:45,362 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for g by 10.009695
+2016-09-11 04:49:46,331 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:49:46,343 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:49:46,358 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:49:46,372 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:49:46,398 - run.py:132 -             <module>() ] Would place string b in a rest state for 174709.508532 seconds 
+2016-09-11 04:49:46,400 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 04:49:56,416 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:50:06,432 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 04:56:05,761 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:56:34,587 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:57:27,879 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:57:27,935 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:57:27,966 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 04:57:27,968 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 04:57:27,977 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 04:57:27,988 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 04:57:27,997 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 04:57:28,016 - run.py:138 -             <module>() ] Would place string r in a rest state for 243281.352762 seconds 
+2016-09-11 04:57:28,018 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 04:57:38,033 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:57:48,046 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 04:57:58,062 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:00:45,404 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:00:45,431 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:00:45,458 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:00:46,496 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:00:46,505 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:00:46,515 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:00:46,525 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:00:46,543 - run.py:139 -             <module>() ] Would place string b in a rest state for 174821.538269 seconds 
+2016-09-11 05:00:46,544 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 05:00:56,559 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:01:12,984 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:01:13,040 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:01:13,070 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:01:14,073 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:01:14,082 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:01:14,093 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:01:14,102 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:01:14,122 - run.py:139 -             <module>() ] Would place string g in a rest state for 226197.656019 seconds 
+2016-09-11 05:01:14,124 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 05:01:24,138 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:01:34,152 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:01:44,170 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:01:54,188 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:02:04,203 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:02:14,219 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for g by 10.010174
+2016-09-11 05:02:15,188 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:02:15,201 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:02:15,217 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:02:15,231 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:02:15,255 - run.py:139 -             <module>() ] Would place string y in a rest state for 54966.5610488 seconds 
+2016-09-11 05:02:15,257 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 05:02:25,273 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:02:35,289 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:02:53,541 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:02:53,570 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:02:53,599 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:02:54,602 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:02:54,615 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:02:54,630 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:02:54,645 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:02:54,673 - run.py:139 -             <module>() ] Would place string b in a rest state for 174837.163439 seconds 
+2016-09-11 05:02:54,676 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 05:03:04,695 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:03:14,711 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:03:24,728 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:04:01,247 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:04:01,305 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:04:01,334 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:04:01,337 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:04:01,347 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:04:01,358 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:04:01,367 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:04:01,387 - run.py:137 -             <module>() ] Would place string r in a rest state for 243330.026837 seconds 
+2016-09-11 05:04:01,388 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 05:04:11,404 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:04:21,421 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:04:31,435 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:04:41,450 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:04:51,467 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:05:01,481 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for r by 10.008012
+2016-09-11 05:05:02,452 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:05:02,465 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:05:02,480 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:05:02,494 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:05:02,520 - run.py:137 -             <module>() ] Would place string b in a rest state for 174832.732952 seconds 
+2016-09-11 05:05:02,522 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 05:05:12,539 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:05:22,553 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:05:32,566 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:05:42,582 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:05:52,597 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:06:02,613 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for b by 10.009334
+2016-09-11 05:06:03,592 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:06:03,604 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:06:03,620 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:06:03,634 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:06:03,662 - run.py:137 -             <module>() ] Would place string g in a rest state for 226195.553097 seconds 
+2016-09-11 05:06:03,664 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 05:06:13,681 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:06:23,697 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:06:33,712 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:06:43,728 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:06:53,744 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:07:03,761 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for g by 10.009905
+2016-09-11 05:07:04,724 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:07:04,736 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:07:04,751 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:07:04,765 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:07:04,792 - run.py:137 -             <module>() ] Would place string r in a rest state for 243306.699243 seconds 
+2016-09-11 05:07:04,794 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 05:07:14,809 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:07:24,823 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:07:34,840 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:07:44,856 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:07:54,871 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:08:04,888 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for r by 10.009998
+2016-09-11 05:08:05,860 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:08:05,869 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:08:05,880 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:08:05,889 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:08:05,906 - run.py:137 -             <module>() ] Would place string y in a rest state for 55016.6918984 seconds 
+2016-09-11 05:08:05,908 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 05:08:15,924 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:08:25,941 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:11:23,320 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:11:23,326 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:11:23,329 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:11:23,334 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:11:23,336 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:11:23,341 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:11:23,342 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:11:23,347 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:11:23,352 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:11:23,354 - run.py:137 -             <module>() ] Would place string y in a rest state for 55576.6699362 seconds 
+2016-09-11 05:11:23,355 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 05:11:33,370 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:11:43,385 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:11:53,400 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:12:03,413 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:12:13,430 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:12:23,445 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for y by 10.009452
+2016-09-11 05:12:24,417 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:12:24,424 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:12:24,430 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:12:24,432 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:12:24,439 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:12:24,441 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:12:24,447 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:12:24,453 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:12:24,455 - run.py:137 -             <module>() ] Would place string r in a rest state for 245668.889849 seconds 
+2016-09-11 05:12:24,457 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 05:12:34,474 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:12:44,491 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:12:54,508 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:13:04,523 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:13:14,539 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:13:24,555 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for r by 10.009906
+2016-09-11 05:13:25,520 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:13:25,527 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:13:25,533 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:13:25,540 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:13:25,542 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:13:25,548 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:13:25,555 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:13:25,557 - run.py:137 -             <module>() ] Would place string b in a rest state for 176561.110152 seconds 
+2016-09-11 05:13:25,559 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 05:13:35,574 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:13:45,590 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:13:55,607 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:14:05,619 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:14:15,633 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:14:25,649 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for b by 10.009733
+2016-09-11 05:14:26,619 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:14:26,626 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:14:26,633 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:14:26,640 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:14:26,646 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:14:26,652 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:14:26,654 - run.py:137 -             <module>() ] Would place string g in a rest state for 228413.3297 seconds 
+2016-09-11 05:14:26,656 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 05:14:36,673 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:14:46,690 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:14:56,705 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:15:06,719 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:15:16,733 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:15:26,747 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for g by 10.007421
+2016-09-11 05:15:27,715 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:15:27,722 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:15:27,728 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:15:27,735 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:15:27,747 - run.py:137 -             <module>() ] Would place string r in a rest state for 245645.53844 seconds 
+2016-09-11 05:15:27,750 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 05:15:37,768 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:15:47,785 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:15:57,801 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:20:29,225 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:20:29,246 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:20:29,266 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:20:29,292 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:20:29,298 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:20:29,304 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:20:29,309 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:20:29,318 - run.py:137 -             <module>() ] Would place string g in a rest state for 3785.8555252 seconds 
+2016-09-11 05:20:29,319 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 05:20:39,334 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:20:49,349 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:21:19,212 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:21:19,233 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:21:19,278 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:21:19,281 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:21:19,285 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:21:19,291 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:21:19,296 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:21:19,304 - run.py:137 -             <module>() ] Would place string y in a rest state for 3795.8508496 seconds 
+2016-09-11 05:21:19,306 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 05:21:29,320 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:21:39,335 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:21:49,351 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:21:59,367 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:22:09,384 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:22:19,398 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:22:29,414 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:22:39,430 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:22:49,446 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:22:59,461 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:23:09,472 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:23:19,488 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:23:29,504 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:23:39,520 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:23:49,536 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:23:59,552 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:24:09,567 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:24:19,581 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:24:29,597 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:24:39,614 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:24:49,631 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:24:59,646 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:25:09,662 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:25:19,676 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:25:29,692 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:25:39,705 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:25:49,719 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:25:59,736 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:26:09,752 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:26:19,769 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:26:29,784 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:26:39,799 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:26:49,816 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:26:59,833 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:27:09,849 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:32:48,627 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:32:48,648 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:32:48,671 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:32:48,674 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:32:48,679 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:32:48,684 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:32:48,689 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:32:48,697 - run.py:137 -             <module>() ] Would place string b in a rest state for 3723.1291098 seconds 
+2016-09-11 05:32:48,699 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 05:32:58,714 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:33:08,729 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:33:18,744 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:33:28,762 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:33:38,777 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:35:53,545 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:35:53,551 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:35:53,553 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:35:53,557 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:35:53,559 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:35:53,564 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:35:53,565 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:35:53,570 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:35:53,574 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:35:53,576 - run.py:137 -             <module>() ] Would place string y in a rest state for 3846.5143164 seconds 
+2016-09-11 05:35:53,577 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 05:36:03,593 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:36:13,608 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:41:01,046 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:41:01,052 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:41:01,053 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:41:01,058 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:41:01,060 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:41:01,064 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:41:01,065 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:41:01,070 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:41:01,075 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:41:01,077 - run.py:137 -             <module>() ] Would place string y in a rest state for 308.0144264 seconds 
+2016-09-11 05:41:01,078 - coilstring.py:158 -                 rest() ] Resting string y
+2016-09-11 05:41:11,094 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:41:21,112 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:41:31,128 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:41:41,145 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:41:51,162 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:42:01,178 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:42:11,195 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:42:21,210 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:42:31,225 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:42:41,241 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:42:51,258 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:43:01,274 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:43:11,290 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:43:21,307 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:43:31,321 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:43:41,337 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:43:51,351 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:44:01,367 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:44:11,383 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:44:21,399 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:44:31,414 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:44:41,433 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:44:51,450 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:45:01,468 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:45:11,485 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:45:21,502 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:45:31,519 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:45:41,534 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:45:51,550 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:46:01,567 - coilstring.py:66 -            _run_rest() ] Updating duration for y by 10
+2016-09-11 05:46:09,582 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for y by 8.008563
+2016-09-11 05:46:10,380 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:46:10,387 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:46:10,393 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:46:10,395 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:46:10,402 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:46:10,404 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:46:10,410 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:46:10,418 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:46:10,420 - run.py:137 -             <module>() ] Would place string r in a rest state for 190.2827334 seconds 
+2016-09-11 05:46:10,421 - coilstring.py:158 -                 rest() ] Resting string r
+2016-09-11 05:46:20,439 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:46:30,455 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:46:40,471 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:46:50,488 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:47:00,503 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:47:10,518 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:47:20,534 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:47:30,549 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:47:40,564 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:47:50,581 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:48:00,598 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:48:10,615 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:48:20,631 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:48:30,649 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:48:40,665 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:48:50,680 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:49:00,697 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:49:10,713 - coilstring.py:66 -            _run_rest() ] Updating duration for r by 10
+2016-09-11 05:49:20,730 - coilstring.py:76 -            _run_rest() ] Adding remainder of duration for r by 10.010567
+2016-09-11 05:49:21,617 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:49:21,624 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:49:21,631 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:49:21,638 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:49:21,640 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:49:21,646 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:49:21,652 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:49:21,654 - run.py:137 -             <module>() ] Would place string b in a rest state for 381.7296334 seconds 
+2016-09-11 05:49:21,656 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 05:49:31,672 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:49:41,690 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:49:51,705 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:50:01,720 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:50:11,737 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:50:21,752 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 05:51:50,188 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:51:50,253 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 05:51:50,256 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 05:51:50,261 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 05:51:50,266 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 05:51:50,271 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 05:51:50,276 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:51:50,281 - coilstring.py:149 - total_seconds_rested() ] No duration results found list index out of range
+2016-09-11 05:51:50,282 - run.py:127 -             <module>() ] Would place string g in a rest state for 333.8556184 seconds 
+2016-09-11 05:51:50,284 - coilstring.py:158 -                 rest() ] Resting string g
+2016-09-11 05:52:00,298 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:52:10,313 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:52:20,331 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:52:30,346 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:52:40,361 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 05:52:50,377 - coilstring.py:66 -            _run_rest() ] Updating duration for g by 10
+2016-09-11 17:02:18,050 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 17:02:18,070 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 17:02:18,119 - coilstring.py:107 -      _add_stop_entry() ] No start entry to stop!!
+2016-09-11 17:02:18,122 - coilstring.py:175 - report_rest_percentage() ] Running report for device y
+2016-09-11 17:02:18,129 - coilstring.py:175 - report_rest_percentage() ] Running report for device r
+2016-09-11 17:02:18,135 - coilstring.py:175 - report_rest_percentage() ] Running report for device b
+2016-09-11 17:02:18,140 - coilstring.py:175 - report_rest_percentage() ] Running report for device g
+2016-09-11 17:02:18,151 - run.py:127 -             <module>() ] Would place string b in a rest state for 8397.0293828 seconds 
+2016-09-11 17:02:18,153 - coilstring.py:158 -                 rest() ] Resting string b
+2016-09-11 17:02:28,170 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:02:38,188 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:02:48,204 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:02:58,218 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:03:08,231 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:03:18,247 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:03:28,263 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:03:38,279 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:03:48,295 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:03:58,311 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:04:08,326 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:04:18,343 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:04:28,358 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:04:38,375 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:04:48,390 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:04:58,404 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:05:08,419 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:05:18,435 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:05:28,451 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:05:38,465 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:05:48,481 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:05:58,496 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:06:08,512 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
+2016-09-11 17:06:18,527 - coilstring.py:66 -            _run_rest() ] Updating duration for b by 10
