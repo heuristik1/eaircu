@@ -318,7 +318,7 @@ class PICReader(threading.Thread):
         now = datetime.now()
         picTime = now.strftime("%Y-%m-%d %H:%M:%S")
         myblob = host + "-" + picTime + "-alarms.txt"
-        blob_service = BlockBlobService(account_name='restcharge',account_key='dMUZG4LV26lL+YxpCIkokjjQhVS8Gq8Yv2D5gTIaq7lb3VImOQ0zwX2NXm+EaP7JkaSEVuPFMIKLoDui4l+oMw==', protocol='http')
+        blob_service = BlockBlobService(account_name='restcharge', protocol='http')
         apath = '/home/pi/battlog/*alarms.txt'
         
         mycontainer = 'rcudrop'
@@ -359,7 +359,7 @@ class PICReader(threading.Thread):
         now = datetime.now()
         picTime = now.strftime("%Y-%m-%d %H:%M:%S")
         myblob = host + "-" + picTime + "-slog.txt"
-        blob_service = BlockBlobService(account_name='restcharge',account_key='dMUZG4LV26lL+YxpCIkokjjQhVS8Gq8Yv2D5gTIaq7lb3VImOQ0zwX2NXm+EaP7JkaSEVuPFMIKLoDui4l+oMw==', protocol='http')
+        blob_service = BlockBlobService(account_name='restcharge', protocol='http')
         mypath = spath
         
         mycontainer = 'rcudrop'
@@ -379,7 +379,7 @@ class PICReader(threading.Thread):
         now = datetime.now()
         picTime = now.strftime("%Y-%m-%d %H:%M:%S")
         myblob = host + "-" + picTime + "-vlogs.txt"
-        blob_service = BlockBlobService(account_name='restcharge',account_key='dMUZG4LV26lL+YxpCIkokjjQhVS8Gq8Yv2D5gTIaq7lb3VImOQ0zwX2NXm+EaP7JkaSEVuPFMIKLoDui4l+oMw==', protocol='http')
+        blob_service = BlockBlobService(account_name='restcharge', protocol='http')
         mypath = '/home/pi/battlog/my*.txt'
         
         mycontainer = 'rcudrop'
