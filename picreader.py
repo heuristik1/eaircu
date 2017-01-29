@@ -1,111 +1,89 @@
 import globals as GLB
-import spidev, os, sys, math
-# from readtemp import ReadTemp
-
+import glob
+import spidev
+import os, sys, math
+from w1thermsensor import W1ThermSensor
+import os.path
+import time
+#import datetime
+from azure.storage.blob import BlockBlobService
 from datetime import datetime
 import RPi.GPIO as GPIO  # Import GPIO library
-import time
 from monotonic import monotonic as monotonic_time
 import logging
 import socket
-#from azure.servicebus import ServiceBusService 
+from ConfigParser import SafeConfigParser
+from time import sleep
+from coilstring.coilstring import *
+import yaml
+import logging.config
+import threading
+import get_packv
+import numpy as np
 
 
-    
-class PICReader():
+class RollingAverager():
+    def __init__(self, window):
+        self.values = []
+        self.window = window
+    def addValue(self,value):
+        self.values.append(value);  # add value to end of value list
+        self.values = self.values[-1 * self.window:]  # keep last "window" num of elements
+    def getAvg(self):
+        return 1.0 * sum(self.values) / len(self.values)
+
+
+
+class PICReader(threading.Thread):
     currentSecond = None
     newSecond = None
     start_time = None
     endtime = None
-    v1reference = 0.0
-    v2reference = 0.0
-    v3reference = 0.0
-    c1reference = 0.0
-    c2reference = 0.0
-    v1slope = 1.0
-    v2slope = 1.0
-    v3slope = 1.0
-    c1slope = 1.0
-    c2slope = 1.0
-   
-    logger = None
+    currentfilename = None
+    killdelaystatus = None
+    startup = datetime.now()
+    StartTime = startup.strftime("%Y-%m-%d %H:%M:%S")
     host = socket.gethostname()
-    #key_name ="RootManageSharedAccessKey" key_value="-yourkeyhere-"
-    #	sbs = ServiceBusService(EAIFDL, shared_access_key_name=key_name, shared_access_key_value=key_value) 
-    #	sbs.create_event_hub(host) 
+    timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    
+   
+    #dataCount = None
+    
     def __init__(self):
-        self.logger = logging.getLogger('root')
+        super(PICReader, self).__init__()
         self.createLogFilePath()
+        #self.setup_logging()
+        self.logger = logging.getLogger(__name__)
+        #self.logging.basicConfig()
         self.initSPI()
-        self.setupPIC24RTC()
+        
+        #self.logger = logging.getLogger(__init__)
         GPIO.setmode(GPIO.BCM)
-        GPIO.setup(GLB.CALIBRATION_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+        GPIO.setwarnings(False)
+        GPIO.setup(GLB.allcontrolpins, GPIO.OUT)
+        GPIO.output(GLB.allcontrolpins, GPIO.LOW)
+        GPIO.setup(GLB.allstatpins, GPIO.IN)
+    
 
     def run(self):
-        self.initialize_calibrated_values()
-        self.initialize_slope_multipliers()
-        self.collectTimeStampData()
+        
+        self.log_that_data()
 
-    # for handling of script inputs
-    def getSPIOutputByte(self, input):
-        msb = input >> 8
-        lsb = input & 0xff
-        GLB.spi.writebytes([msb, lsb])
-        data = GLB.spi.readbytes(2)
-        return data
 
-    def get16bitSPIData(self, returnData):
-        return self.getWord(returnData[0], returnData[1])
 
-    def getWord(self, msb, lsb):
-        return msb * 256 + lsb
 
-    # convert decimal to hex value
-    def decToHex(self, decValue):
-        firstDigit = (decValue / 10) << 4
-        secondDigit = decValue % 10
-        return firstDigit + secondDigit
-
-    def getSystemTimeInHex(self):
-        rawTimeData = (time.strftime("%y/%m/%d/%H/%M/%S")).split("/")
-        for i in range(0, 6):
-            rawTimeData[i] = self.decToHex(int(rawTimeData[i]))
-        return rawTimeData
-
-    def addSPIDataMarking(self, sendData):
-        return sendData | 0x8000
-
-    def removeSPIDataMarking(self, receiveData):
-        return receiveData & 0x7fff
-
-    def sendSPIDataWithMarking(self, SPIOutput):
-        return self.getSPIOutputByte(self.addSPIDataMarking(SPIOutput))
-
-    def createCommandData(self, commandType, rawData):
-        return (commandType << 8) + rawData
-
-    def getPinReading(self, pin):
-        my16bitSPIData = self.get16bitSPIData(self.sendSPIDataWithMarking(self.createCommandData(pin, GLB.NULL)))
-        return self.removeSPIDataMarking(my16bitSPIData)
-
-    # get current value
-    def getCurrReading(self, voltVal, slopemult, calibref=0.0):
-        self.logger.debug("Read value %f" % float(voltVal))
-        tempV = (voltVal * GLB.ADC_3_3V_RATIO)
-        tempV -= GLB.iref
-        self.logger.debug("Vout %f" % float(tempV))
-        currentVal = tempV * 62.5 * slopemult + calibref
-        self.logger.debug("Returning value %f" % float(currentVal))
-        return currentVal
-
-    # get voltage value
-    def getVoltageReading(self, voltVal, multiplier, slopemult, calibref=0.0):
-        voltVal *= multiplier
-        if voltVal < GLB.vref:
-            voltageVal = (GLB.vref - voltVal)
-        else:
-            voltageVal = voltVal - GLB.vref
-        return voltageVal * slopemult + calibref
+    def calc_voltage(self, adc_code):
+        out = int(adc_code, 16)
+        #self.logger.info ("RAW CODE {}".format(out))
+        count = out
+        out >>= 4
+        #self.logger.info ("CODE minus lower bits {}".format(out))
+        out &= 0x0FFFF
+        #self.logger.info ("CODE minus status bits {}".format(out))
+        out -= 0x20000
+        out=float(out)
+        out=out/131072.0
+        return ((out*5)+5)*29.76
 
     # get last 6 digit of mac and use it as an id
     def getDeviceId(self):
@@ -115,295 +93,548 @@ class PICReader():
         uniqueId = macToken[3] + macToken[4] + macToken[5]
         return uniqueId.replace("\n", "")
 
-    # use this function to reset pic24
-    def resetPic24(self):
-        self.initPicResetGPIO()
-        GPIO.output(GLB.NRESET_PIC24_GPIO_PIN, False)
-        time.sleep(GLB.NRESET_PIC24_HOLD_TIME)
-        GPIO.output(GLB.NRESET_PIC24_GPIO_PIN, True)
-        self.releaseGPIO()
-        return
 
-    # use this function to reset entire system
-    def resetSystem(self):
-        self.initNPorSysGPIO()
-        GPIO.output(GLB.NPOR_SYS_GPIO_PIN, False)
-        time.sleep(GLB.NPOR_SYS_HOLD_TIME)
-        GPIO.output(GLB.NPOR_SYS_GPIO_PIN, True)
-        self.releaseGPIO()
-        return
-
-    # open connection and setup spi so we can talk to the pic
     def initSPI(self):
-        # GLB.spi = spidev.SpiDev()
-        GLB.spi.open(0, 0)
+        # GLB.spi = spidev.SpiDev() # close spi connection
+        GLB.spi0 = spidev.SpiDev()
+        GLB.spi0.open(0,0)
+        GLB.spi1 = spidev.SpiDev()
+        GLB.spi1.open(0,1)
+        #GLB.spi.open(0,1) 
+        #GLB.spi.open(0,0)
+        GLB.spi0.max_speed_hz = 122000
+        GLB.spi0.bits_per_word = 8
+        GLB.spi0.cshigh = False
+        GLB.spi0.lsbfirst = False
+        GLB.spi0.mode = 0
+        GLB.spi1.max_speed_hz = 122000
+        GLB.spi1.bits_per_word = 8
+        GLB.spi1.cshigh = False
+        GLB.spi1.lsbfirst = False
+        GLB.spi1.mode = 0
         return
-
+           
     # close spi connection
-    def closeSPI(self):
-        GLB.spi.close()
+    def closeSPI(self): #GPIO.setwarnings(False)
+        GLB.spi0.close() #GPIO.setmode(GPIO.BCM) ## Use board pin numbering
+        GLB.spi1.close()
         return
-
-    # init pic reset gpio
-    def initPicResetGPIO(self):
-        GPIO.setwarnings(False)
-        GPIO.setmode(GPIO.BCM)  ## Use bcm numbering
-        GPIO.setup(GLB.NRESET_PIC24_GPIO_PIN, GPIO.OUT)  ## Setup NRESET_PIC24_PIN as output
-        return
-
-    # init npor gpio
-    def initNPorSysGPIO(self):
-        GPIO.setwarnings(False)
-        GPIO.setmode(GPIO.BCM)  ## Use board pin numbering
-        GPIO.setup(GLB.NPOR_SYS_GPIO_PIN, GPIO.OUT)  ## Setup NPOR_SYS_PIN as output
-        return
-
-    # release gpio pins
-    def releaseGPIO(self):
-        GPIO.cleanup()
-        return
-
-    def calibrate(self):
-        self.logger.info("Calibration initiating...")
-        tsData = []
-
-        for i in range(GLB.GET_RTC_YEAR, GLB.GET_ADC_DATA6 + 1):
-            data = self.getPinReading(i)
-            tsData.append(data)
-
-        v1Reading = GLB.REFERENCE_VOLTAGE - self.getVoltageReading(tsData[GLB.TS_DATA_V1], GLB.ADC_VOLT3vRATIO)
-        v2Reading = GLB.REFERENCE_VOLTAGE - self.getVoltageReading(tsData[GLB.TS_DATA_V2], GLB.ADC_VOLT3vRATIO)
-        v3Reading = GLB.REFERENCE_VOLTAGE - self.getVoltageReading(tsData[GLB.TS_DATA_V3], GLB.ADC_VOLT3vRATIO)
-        c1Reading = GLB.REFERENCE_CURRENT - self.getCurrReading(tsData[GLB.TS_DATA_C1])
-        c2Reading = GLB.REFERENCE_CURRENT - self.getCurrReading(tsData[GLB.TS_DATA_C2])
-        collectedData = str(v1Reading) + "," + str(v2Reading) + "," + str(v3Reading) + "," + \
-                        str(c1Reading) + "," + str(c2Reading) + "\n"
-        self.storeToFile(GLB.CALIB_FILE_NAME, collectedData, False)
-        self.logger.info("Calibration complete")
-
-		
-    def initialize_calibrated_values(self):
-        try:
-            with open(GLB.CALIB_FILE_NAME) as cfile:
-                line = cfile.readline()
-                line = line.strip()
-                cfile.close()
-                cdata = line.split(",", 5)
-                self.logger.debug("Num calibration values available:%d" % len(cdata))
-                if len(cdata) == 5:
-                    self.logger.debug("Adding calibration values:")
-                    self.logger.debug(cdata)
-                    self.v1reference = float(cdata[0])
-                    self.v2reference = float(cdata[1])
-                    self.v3reference = float(cdata[2])
-                    self.c1reference = float(cdata[3])
-                    self.c2reference = float(cdata[4])
-        except Exception, e:
-                self.logger.critical("Exception while reading calibration file %s:%s" % (GLB.CALIB_FILE_NAME, e))
-
-    def initialize_slope_multipliers(self):
-	    try:
-                with open(GLB.SLOPEADJ_FILE_NAME) as sfile:
-                    line = sfile.readline()
-                    line = line.strip()
-                    sfile.close()
-                    sdata = line.split(",", 5)
-                    self.logger.debug("Slope Multiplier values available:%d" % len(sdata))
-                    if len(sdata) == 5:
-                        self.logger.debug("Adding slope multiplier values:")
-                        self.logger.debug(sdata)
-                        self.v1slope = float(sdata[0])
-                        self.v2slope = float(sdata[1])
-                        self.v3slope = float(sdata[2])
-                        self.c1slope = float(sdata[3])
-                        self.c2slope = float(sdata[4])
-
-            except Exception, e:
-                self.logger.critical("Exception while reading Slope Multiplier file %s:%s" % (GLB.SLOPEADJ_FILE_NAME, e))
-
-    def read_data(self):
-
-        # prepare timestamp data
-        self.prepare_time_stamp()
-        tsData = []
-        for i in range(GLB.GET_RTC_YEAR, GLB.GET_ADC_DATA6 + 1):
-            data = self.getPinReading(i)
-            tsData.append(data)
         
-        #picTime = str(tsData[GLB.TS_DATA_MONTH]) + "/" + \
-        #        str(tsData[GLB.TS_DATA_DAY]) + "/" + \
-        #        str(tsData[GLB.TS_DATA_YEAR]) + " " + \
-        #        str(tsData[GLB.TS_DATA_HOUR]) + ":" + \
-        #        str(tsData[GLB.TS_DATA_MINUTE]) + ":" + \
-        #        str(tsData[GLB.TS_DATA_SECOND])
-       
+    #get spi data
+    def read_stringdata(self,ch):
+        #out = None
+        self.initSPI
+        r = GLB.spi1.xfer2([ch,ch,ch],0, 65535)
+     
+
+        adc1_code =  ''.join('{:02x}'.format(x) for x in r)
+      
+        time.sleep(.085)      
+        return self.calc_voltage(adc1_code)
+
+   #read first ADC for pack voltage.     
+    def read_packdata(self,CHN):
+        #out=None
+        #self.initSPI 
+        resp=GLB.spi0.xfer2([CHN,CHN,CHN],0, 65535)
+        adc_code = ''.join('{:02x}'.format(x) for x in resp)
+        time.sleep(.085)
+
+        return self.calc_voltage(adc_code)
+
+    #Read second ADC for string voltage
+    def read_channels(self):  
+        dummy = self.read_packdata(0xB0)
+        time.sleep(.04)
         v1Reading = round(
-            self.getVoltageReading(tsData[GLB.TS_DATA_V1],
-                                   GLB.ADC_VOLT3vRATIO,
-                                   self.v1slope,
-                                   self.v1reference),
+            self.read_packdata(0xB0),
             GLB.DECIMAL_ACCURACY)
+        dummy = self.read_stringdata(0xB0)
+        time.sleep(.04)
         v2Reading = round(
-            self.getVoltageReading(tsData[GLB.TS_DATA_V2],
-                                   GLB.ADC_VOLT3vRATIO,
-                                   self.v2slope,
-                                   self.v2reference),
+            self.read_stringdata(0xB0),
             GLB.DECIMAL_ACCURACY)
+        time.sleep(.04)
+        #self.closeSPI
+        dummy = self.read_stringdata(0xB8)
+        #self.initSPI
+        time.sleep(.04)
         v3Reading = round(
-            self.getVoltageReading(tsData[GLB.TS_DATA_V3],
-                                   GLB.ADC_VOLT3vRATIO,
-                                   self.v3slope,
-                                   self.v3reference),
+            self.read_stringdata(0xB8),
             GLB.DECIMAL_ACCURACY)
-        c1Reading = round(
-            self.getCurrReading(tsData[GLB.TS_DATA_C1],
-                                self.c1slope,
-                                self.c1reference),
+        time.sleep(.04)
+        #self.closeSPI
+        #dummy = self.read_stringdata(0xB1)
+        dummy = self.read_stringdata(0xB1)
+        #self.initSPI
+        time.sleep(.04)
+        v4Reading = round(
+            self.read_stringdata(0xB9),
             GLB.DECIMAL_ACCURACY)
-        c2Reading = round(
-            self.getCurrReading(
-                tsData[GLB.TS_DATA_C2],
-                self.c2slope,
-                self.c2reference),
+        time.sleep(.03)
+        dummy =  self.read_stringdata(0xB9)
+        time.sleep(.03)
+        v5Reading = round(
+            self.read_stringdata(0xB9),
             GLB.DECIMAL_ACCURACY)
-        return c1Reading, c2Reading, v1Reading, v2Reading, v3Reading
+        #t1Reading,t2Reading,t3Reading,t4Reading  = self.read_tempdata()
+        return v1Reading, v2Reading, v3Reading, v4Reading, v5Reading 
+   
+   #when called, kills rest on all strings.
+    def killRest(self):
+       # Valuecheck Processing for error values
+       #allcontrolpins = [19,20,21,26]
+       for i in GLB.allcontrolpins:
+           GPIO.output(i,GPIO.LOW)
+       self.killdelaystatus = "INACTIVE"
+       self.logger.info ("killdelaystatus = %s" % self.killdelaystatus)
+       time.sleep(.1)
+       if not self.stringstatus == "ALLACTIVE":
+           self.soundthealarm("PACK","String Rest Malfunction")
+         
+       return
 
-    def verfiyDataRange(self, dataType, value):
-        goodRange = False
-        # check boundaries of voltage
-        if dataType == GLB.DATA_TYPE_VOLTAGE:
-            if GLB.MIN_VOLTAGE <= value <= GLB.MAX_VOLTAGE:
+    def TheftAlarm(self,stringname):
+       self.soundthealarm(stringname,"Theft Alarm")
+       return
+  
+    def HiPackAlarm(self,stringname):
+       self.soundthealarm(stringname,"HIPackAlarm")
+       return
+   
+    def LOPackAlarm(self,stringname):
+       self.soundthealarm(stringname,"LOPackAlarm")        
+       return
+    
+    def stringstatus(self):
+       total = 0
+       for i in GLB.allstatpins:
+           total = total + GPIO.input(i)
+           #self.logger.info ("total is %s" % total)
+       stringstatus = "ALLACTIVE" if total < 1 else "REST"
+       return stringstatus
+                  
+           
+
+    
+    def verifyDataRange(self, dataType, value, stringname):
+       goodRange = False
+       killdelay = threading.Timer(GLB.KILL_DELAY, self.killRest)
+       killdelay.setName('killdelay') 
+        #check pack voltage
+       if dataType == GLB.DATA_TYPE_PACKVOLTAGE:
+            if GLB.MIN_VPACK_REST >= value:
+                if self.killdelaystatus == "INACTIVE" and self.stringstatus() == "REST":
+                        self.logger.info("Kill delay due to low pack V")
+                        
+                        #killdelay = threading.Timer(900, self.killRest())
+                        #killdelay.setName('killdelay') 
+                        killdelay.start()
+                        self.killdelaystatus = "ACTIVE"
+                        self.soundthealarm(stringname,"Kill Rest-Low Pack Voltage")
+                    
                 goodRange = True
-        # check boundaries of current
-        elif dataType == GLB.DATA_TYPE_CURRENT:
-            if GLB.MIN_ABS_CURRENT <= math.fabs(value) <= GLB.MAX_ABS_CURRENT:
+            elif GLB.MIN_PACKALARM >= value:
+                self.soundthealarm(stringname,"LO Pack Alarm")
+                self.logger.info("Low Pack Alarm")
                 goodRange = True
-        return goodRange
+            elif GLB.MAX_PACKALARM <= value:
+                self.soundthealarm(stringname,"Hi Pack Alarm")
+                if self.killdelaystatus == "ACTIVE" and self.stringstatus() == "REST":
+                        killdelay.cancel()
+                        self.logger.info("Kill delay cancelled")
+                        self.killdelaystatus = "INACTIVE"
+                        self.soundthealarm(stringname,"Cancel KillDelay")
+                
+                goodRange = True
+            elif GLB.MIN_PACKVOLTAGE < value < GLB.MAX_PACKVOLTAGE:
+                
+                goodRange = True
+                                           
+        #check string voltage
+       elif dataType == GLB.DATA_TYPE_STRINGVOLTAGE:
+            if GLB.STOLEN_STRINGALARM >= value:
+                self.soundthealarm(stringname, "Theft Alarm")
+                
+      
+                goodRange = True
+            
+            elif GLB.MIN_VSTRING_REST >= value:
+                goodRange = True
 
-	
 
-    # collect time stamp data
-    def validate_readings(self, picTime, v1Reading, v2Reading, v3Reading, c1Reading, c2Reading):
+            elif GLB.MIN_STRINGVOLTAGE < value < GLB.MAX_STRINGVOLTAGE:
+                goodRange = True
+              
+       return goodRange
+
+    # validate readings
+    def validate_readings(self, picTime, v1Reading, v2Reading, v3Reading, v4Reading, v5Reading):
         self.logger.debug("Validating Readings...")
         # check if data pass range test
-        validVoltage1Range = self.verfiyDataRange(GLB.DATA_TYPE_VOLTAGE, float(v1Reading))
-        validVoltage2Range = self.verfiyDataRange(GLB.DATA_TYPE_VOLTAGE, float(v2Reading))
-        validVoltage3Range = self.verfiyDataRange(GLB.DATA_TYPE_VOLTAGE, float(v3Reading))
-        validCurrent1Range = self.verfiyDataRange(GLB.DATA_TYPE_CURRENT, float(c1Reading))
-        validCurrent2Range = self.verfiyDataRange(GLB.DATA_TYPE_CURRENT, float(c2Reading))
+        packVcheck = self.verifyDataRange(GLB.DATA_TYPE_PACKVOLTAGE, float(v1Reading),"PACK")
+        stringRVcheck = self.verifyDataRange(GLB.DATA_TYPE_STRINGVOLTAGE, float(v2Reading),"RED")
+        stringGVcheck = self.verifyDataRange(GLB.DATA_TYPE_STRINGVOLTAGE, float(v3Reading),"GREEN")
+        stringBVcheck = self.verifyDataRange(GLB.DATA_TYPE_STRINGVOLTAGE, float(v4Reading),"BLUE")
+        stringYVcheck = self.verifyDataRange(GLB.DATA_TYPE_STRINGVOLTAGE, float(v5Reading),"YELLOW")
 
-        # Substitute NULL for error values
-        if not validVoltage1Range:
+   # Substitute NULL for error values
+        if not packVcheck:
             v1Reading = None
-        if not validVoltage2Range:
+        if not stringRVcheck:
             v2Reading = None
-        if not validVoltage3Range:
+        if not stringGVcheck:
             v3Reading = None
-        if not validCurrent1Range:
-            c1Reading = None
-        if not validCurrent2Range:
-            c2Reading = None
+        if not stringBVcheck:
+            v4Reading = None
+        if not stringYVcheck:
+            v5Reading = None
+                  
+        
+     
+        #if not LASTVY == None:
+        #    self.compare_readings(LASTVY,nowVY)
+        
+
+
 
         collectedData = picTime + "," + self.getDeviceId() + "," + \
-                        str(v1Reading) + "," + str(v2Reading) + "," + str(v3Reading) + "," + \
-                        str(c1Reading) + "," + str(c2Reading) + "," + "," + "\n"
-        return collectedData
+            str(v1Reading) + "," + str(v2Reading) + "," + str(v3Reading) + "," + \
+            str(v4Reading) + "," + str(v5Reading) + "\n" #str(STATE) + "\n"
+        return collectedData 
+    
 
-    def collectTimeStampData(self):
+
+    
+
+   
+
+    def shipalarms(self):
+        #def shiplogs(self):
+        apath = '/home/pi/battlog/Alarm*.txt'
+        afile = self.get_latest_file(apath)
+        #print myfile
+        host = self.getDeviceId()
+        now = datetime.now()
+        picTime = now.strftime("%Y-%m-%d %H:%M:%S")
+        myblob = host + "-" + picTime + "-alarms.txt"
+        blob_service = BlockBlobService(account_name='restcharge',account_key='dMUZG4LV26lL+YxpCIkokjjQhVS8Gq8Yv2D5gTIaq7lb3VImOQ0zwX2NXm+EaP7JkaSEVuPFMIKLoDui4l+oMw==', protocol='http')
+        apath = '/home/pi/battlog/*alarms.txt'
+        
+        mycontainer = 'rcudrop'
+        blob_service.create_blob_from_path(
+            #myfile = get_latest_file(apath)
+        #print myfile
+            #blob_service.create_blob_from_path(
+                mycontainer,
+                myblob,
+                afile
+                )
+        return
+
+    def soundthealarm(self,Sensor, Alarm):
+        host = self.getDeviceId()
+        now = datetime.now()
+        picTime = now.strftime("%Y-%m-%d")
+        alarmfile = GLB.ALARMFILENAME + host + "-" + picTime + "-alarms.txt"
+        adata =  str(picTime) + "," +  str(host) + "," + str(Sensor) +"," + str(Alarm) + "\n"
+        self.storeToFile(alarmfile, adata, append=True)
+        return
+          
+    def string_log(self, report):
+        host = self.getDeviceId()
+        now = datetime.now()
+        picTime = now.strftime("%Y-%m-%d")
+        stringlogfile = GLB.STRINGLOGFILENAME + host + "-" + picTime + "-slog.txt"
+        sdata =  str(picTime) + "," +  str(host) + "," + str(report) + "\n"
+        self.storeToFile(stringlogfile, sdata, append=True)
+        return
+
+    def shipstringlogs(self):
+        #def shiplogs(self):
+        spath = '/home/pi/battlog/str*.txt'
+        sfile = self.get_latest_file(spath)
+        #print myfile
+        host = self.getDeviceId()
+        now = datetime.now()
+        picTime = now.strftime("%Y-%m-%d %H:%M:%S")
+        myblob = host + "-" + picTime + "-slog.txt"
+        blob_service = BlockBlobService(account_name='restcharge',account_key='dMUZG4LV26lL+YxpCIkokjjQhVS8Gq8Yv2D5gTIaq7lb3VImOQ0zwX2NXm+EaP7JkaSEVuPFMIKLoDui4l+oMw==', protocol='http')
+        mypath = spath
+        
+        mycontainer = 'rcudrop'
+        blob_service.create_blob_from_path(
+                mycontainer,
+                myblob,
+                sfile
+                )
+        return
+    
+    def shiplogs(self):
+        #def shiplogs(self):
+        mypath = '/home/pi/battlog/my*.txt'
+        myfile = self.get_latest_file(mypath)
+        #print myfile
+        host = self.getDeviceId()
+        now = datetime.now()
+        picTime = now.strftime("%Y-%m-%d %H:%M:%S")
+        myblob = host + "-" + picTime + "-vlogs.txt"
+        blob_service = BlockBlobService(account_name='restcharge',account_key='dMUZG4LV26lL+YxpCIkokjjQhVS8Gq8Yv2D5gTIaq7lb3VImOQ0zwX2NXm+EaP7JkaSEVuPFMIKLoDui4l+oMw==', protocol='http')
+        mypath = '/home/pi/battlog/my*.txt'
+        
+        mycontainer = 'rcudrop'
+        blob_service.create_blob_from_path(
+                mycontainer,
+                myblob,
+                myfile
+                )
+        return
+
+    def get_latest_file(self,path):
+        newest = max(glob.iglob(path), key=os.path.getctime)
+        return newest
+
+    
+
+
+    def log_that_data(self):
         dataCount = 0
-        #start_time = time.time()
-        #t1 = start_time
-        #t2 = t1
-        #time.sleep(1 - time.monotonic() % 1))
-        #time.sleep(1)
+        start_delay = 0
+        discharge_delay = 0
+        restcheck_count = 0
+        validate_rest_count = 0
+        rest_report = None
+        string_report = None
+        killdelaystatus = "INACTIVE"
         currentFileName = GLB.LOG_FILE_NAME
-        #rtemp = None
-        #try:
-        #    rtemp = ReadTemp()
-        #except Exception, e:
-        #    self.logger.critical("Temperature reading unavailable: %s" % e)
+        coil_dict = {}  # dictionary to hold our coilstrings
+        parser = SafeConfigParser()
+        parser.read('settings.ini')
+        device = socket.gethostname() # grab device name
+        resolution = parser.getint('device', 'resolution')
+        allcontrolpins = []
+        allstatpins = []
+        strings = parser.items('strings')  # setup our coilstrings
+        for string, bday in strings:
+            bday_split = bday.split(',')[0]
+            control_pin_split = int(bday.split(',')[1])
+            status_pin_split = int(bday.split(',')[2])
+            coil_dict[string] = CoilString(device, string, control_pin_split, status_pin_split, datetime.strptime(bday_split, '%Y-%m-%d %H:%M:%S'))
+        allcontrolpins.append(control_pin_split)
+        allstatpins.append(status_pin_split)
+        GPIO.setup(allcontrolpins, GPIO.OUT)
+        GPIO.output(allcontrolpins, GPIO.LOW)
+        GPIO.setup(allstatpins, GPIO.IN)
+        last_coil_inrest = None
+        STATE = "FLOAT"
+        Last_smoothed_Vpack = 0
+        Current_smoothed_Vpack = 0
+        Vpack = 0
+        no_rest = None
+        no_rest_count = 0
+        option_a = None
+        option_b = None
 
-        # scan pic every 1 sec for new adc data until stopped
+        def check_string_state(coil_dict):
+            stringvoltages = (v4Reading, v3Reading, v2Reading, v5Reading)
+            string_list = sorted([(x.name) for x in coil_dict.values()])
+            string_state = zip(string_list,stringvoltages)
+            self.logger.info("stringstate = %s" %string_state)
+            return
+
+        def rest_callback(coilstring):
+            """ 
+            Callback for placing string into resting state. 
+            """
+            #logger.info("coilstring to rest is %s" %coilstring)
+            GPIO.output(coilstring.control_pin,GPIO.HIGH)
+            # logger = logging.getLogger(__ name__)
+            # logger.info("{} was placed into a rest state".format(coilstring.name))
+            
+            return  
+
+        def rest_check(coilstring):
+            GPIO.setup(coil_in_rest.status_pin, GPIO.IN)
+
+        def active_callback(coilstring):
+            """
+            Callback for placing string into active state. 
+            """
+            GPIO.output(coilstring.control_pin,GPIO.LOW)
+
+            # logger = logging.getLogger(__name__)
+            # logger.info("{} was placed into an active state".format(coilstring.name))
+            #restcheck_count = 0
+            return
+
+        def get_candidate_coil_string(coil_dict):
+            """
+            Given a dictionary of 'string name'->CoilString pairs, return the coilstring with the
+            least rested time
+            """
+            # determine which string has least amount of rest time, and place into rest state
+            rested_list = sorted([(x.name, x.report_rest_percentage()) for x in coil_dict.values()], key=lambda data: data[1])
+            if rested_list:
+                self.logger.info("String Rest Report: {}".format(rested_list))
+                string_report ="[TIME]" + str(picTime) + "," + ("STRING_REST_REPORT: {}".format(rested_list))
+                self.string_log(string_report)
+                option_a = coil_dict[rested_list[0][0]]
+                option_b = coil_dict[rested_list[1][0]]
+                option_c = coil_dict[rested_list[2][0]]
+                if option_a == no_rest and option_b == no_rest:
+                   return  coil_dict[rested_list[2][0]]
+                elif option_a == no_rest:
+                   return coil_dict[rested_list[1][0]]
+                else:
+                   return coil_dict[rested_list[0][0]]
+
+        def seconds_to_rest(coilstring):
+            """
+            Given a CoilString object, determine the amount of seconds to rest in order to reach 20% of lifetime
+            :return: float
+            """
+            twenty_percent = (datetime.utcnow() - coilstring.bday).total_seconds() * .2
+            return twenty_percent - coilstring.total_seconds_rested
+
+
+        def all_active(coil_dict):
+            for x in coil_dict.values():
+                if not x == None:
+                    if x.state == CoilString.REST:
+                        return False
+            return True
+     
+        # here we define our exponential moving average of Vpack.  
+        #The period represents the number of Vpack readings we need to establish the moving average.
+        #Once we have 5 readings, we then build our moving average and use it to determine changes in state.
+
+        def getpack_v():
+            return self.get_packv.run()
+      
+
+
         while True:
-            time.sleep(1 - monotonic_time() % 1)
-            #f()
-            # get a new file name in the beginning of the data collection cycle
+            if self.killdelaystatus == None:
+                self.killdelaystatus = "INACTIVE"
             if dataCount == 0:
                 currentFileName = self.getNewFileName()
-
+            
             now = datetime.now()
             self.currentSecond = now.second
             picTime = now.strftime("%Y-%m-%d %H:%M:%S")
-            #picTime = str(tsData[GLB.TS_DATA_MONTH]) + "/" + \
-            #    str(tsData[GLB.TS_DATA_DAY]) + "/" + \
-            #    str(tsData[GLB.TS_DATA_YEAR]) + " " + \
-            #    str(tsData[GLB.TS_DATA_HOUR]) + ":" + \
-            #    str(tsData[GLB.TS_DATA_MINUTE]) + ":" + \
-            #    str(TSdata[GLB.TS_DATA_SECOND])   
-
-            c1Reading, c2Reading, v1Reading, v2Reading, v3Reading = self.read_data()
+    
+            v1Reading, v2Reading, v3Reading, v4Reading, v5Reading = self.read_channels()
             # discard duplicates
             if self.is_dup():
                 #time.sleep(.8)
                 continue
-            #endtime = time.time()
-            #self.logger.info("Starttime: %s" % str(start_time))
-            #self.logger.info("Endtime: %s" % str(endtime))
-            #sleeptime = (endtime - start_time)
-            #time.sleep(sleeptime)
+            
             collectedData = self.validate_readings(
-                picTime, v1Reading, v2Reading, v3Reading, c1Reading, c2Reading)
+                picTime, v1Reading, v2Reading, v3Reading, v4Reading, v5Reading)
 
+            roll = RollingAverager(5)
+            roll.addValue(v1Reading)
+            if start_delay > 4:
+                Current_smoothed_Vpack = roll.getAvg()
+                            #ema = exponential_moving_avaerage()
+            #next(ema)
+            
+                #return Current_smoothed_Vpack
+            #Current_smoothed_Vpack =  smoothed_Vpack(v1Reading)
+           
+           
+                        
+            
+            
 
-
+            collectedData = collectedData + "," + str(STATE)
             # store data
-            self.storeToFile(currentFileName, collectedData)
-
-            log_data = "[TIME] " + picTime + "\n" + \
+            self.storeToFile(currentFileName, collectedData)        
+            log_data = "[TIME]" + picTime + "\n" + \
                        "[ID] " + self.getDeviceId() + "\n" + \
-                       "[V1] " + str(v1Reading) + "\n" + \
-                       "[V2] " + str(v2Reading) + "\n" + \
-                       "[V3] " + str(v3Reading) + "\n" + \
-                       "[C1] " + str(c1Reading) + "\n" + \
-                       "[C2] " + str(c2Reading) + "\n"
-            self.logger.info(log_data)
-            #self.streamer.log("[TIME] ", picTime)
-            #self.streamer.log("[ID] ", self.getDeviceId())
-            #self.streamer.log("[Vpack] ", str(v1Reading))
-            #self.streamer.log("[Vyello] ", str(v2Reading))
-            #self.streamer.log("[Vblue] ", str(v3Reading))
-            #self.streamer.log("[Iyello] ", str(c1Reading))
-            #self.streamer.log("[Iblue] ", str(c2Reading))
-             
+                       "[Vpack] " + str(v1Reading) + "\n" + \
+                       "[VSR] " + str(v2Reading) + "\n" + \
+                       "[VSG] " + str(v3Reading) + "\n" + \
+                       "[VSB] " + str(v4Reading) + "\n" + \
+                       "[VSY] " + str(v5Reading) + "\n" + \
+                       "[STATE]" + str(STATE) + "\n" + \
+                       "[SMOOTHEDVPACK]" + str(Current_smoothed_Vpack) + "\n"
+        
+               
+                    
+                    
+       
+          
+
+            start_delay += 1
             dataCount += 1
-            #dataCountimp = float(dataCount)
-            #test = dataCountimp %2
-            #t1 = start_time
-            #t2 = t1
-            #period = 1.0
-            #if (t2 - t1 < period) :
-            #     t2 = time.time()	
-            #t1+=period 
-	
-            #if (t2 -t1 >= period):
-            #     self.streamer.log("[Vpack] ", str(v1Reading))
-            #     self.streamer.log("[Vyello] ", str(v2Reading))
-            #     self.streamer.log("[Vblue] ", str(v3Reading))
-            #     self.streamer.log("[Iyello] ", str(c1Reading))
-            #     self.streamer.log("[Iblue] ", str(c2Reading))
-	    self.logger.info("ENDoLOOP")
-            if dataCount > 59:
+           
+            self.logger.info("Stringstatus = %s" % self.stringstatus())
+
+            
+                        
+            self.logger.info(log_data)
+            if dataCount > 1800:
+                #dataCount = 0
+                self.shiplogs()
+                self.shipalarms()
                 dataCount = 0
+            if  Current_smoothed_Vpack > GLB.MIN_VPACK_REST: #and start_delay > GLB.startdelay:
+             
+                if all_active(coil_dict):
+                    
+                   # determine which string has least amount of rest time, and place into rest state
+                    coil_in_rest = get_candidate_coil_string(coil_dict)
+                    #if coils_2_rest[0] == "no_rest":
+                    #    coil_in_rest = coils_2_rest[1]
+                    #    no_rest_count +=1
+                    #else:
+                    #    coil_in_rest = coils_2_rest[0]
+                        
+                    if coil_in_rest:
+                        rest_for = seconds_to_rest(coil_in_rest)
+                        if rest_for > (GLB.MIN_REST_DURATION * GLB.timefactor):
+                            self.logger.info(
+                            "Placing string {} in a rest state for {} seconds ".format(coil_in_rest.name, rest_for))
+                            coil_in_rest.rest(rest_for, resolution, rest_callback, active_callback)
+                            rest_report = "[TIME]" + str(picTime) + "," + "[ON_REST]:" + str(coil_in_rest.name) + "," +\
+                                           "[REST_DURATION]:" + str(round(rest_for,GLB.DECIMAL_ACCURACY)) + "," + "[PREV_REST_STR]: "  + "\n"      
+                           
+                        else:
+                            self.logger.error("No string meets min duration.")
+                        self.string_log(rest_report)
+                        self.shipstringlogs()
+                        last_coil_inrest = coil_in_rest
+                        if no_rest_count > 2:
+                            no_rest_count = 0
+                            no_rest = None
+                        restcheck_count +=1
+                       
+    
+                    else:
+                        self.logger.error("Unable to find candidate CoilString to rest")
+                    
+           
+                if restcheck_count >5:
+                   self.logger.info("Stringrest check = %s" % rest_check(coil_in_rest))
+                   if not rest_check(coil_in_rest):
+                    
+                       coil_in_rest.cancel_rest()
+                       no_rest = coil_in_rest
+                       self.logger.info("Cancel Rest due to interruption.")
+                       restcheck_count = 0
+                      
+          
+
+                Current_smoothed_Vpack = Last_smoothed_Vpack
             
         return
+
 
     def is_dup(self):
         dup = False
         #self.newSecond = datetime.now().second
-        #if self.currentSecond == self.newSecond:
-        #    dup = True
-        #    self.logger.info("Duplicate reading found at second %s" % str(self.newSecond))
-        #self.currentSecond = self.newSecond
+
         return dup
 
     # store info into file
@@ -423,23 +654,8 @@ class PICReader():
             os.mkdir(GLB.LOG_FILE_PATH)
         return
 
-    # create rtc log file path if it does not exist
-    def createRTCFilePath(self):
-        # if directory rtclog does not exist, create one
-        if not (os.path.isdir(GLB.RTC_FILE_PATH)):
-            os.mkdir(GLB.RTC_FILE_PATH)
-        return
-
-    # create debug log file path if it does not exist
-    def createDebugFilePath(self):
-        # if directory rtclog does not exist, create one
-        if not (os.path.isdir(GLB.DEBUG_FILE_PATH)):
-            os.mkdir(GLB.DEBUG_FILE_PATH)
-        return
-
-    # get current time in a string
     def getTimeString(self):
-        return time.strftime("%m%d%y%H%M%S")
+        return time.strftime("%m%d%y%H")
 
     # get current time in a string formatted for reading
     def getFormatTimeString(self):
@@ -449,107 +665,7 @@ class PICReader():
     def getNewFileName(self):
         return GLB.LOG_FILE_NAME + self.getTimeString() + ".txt"
 
-    # get new file name based on current time
-    def getDebugNewFileName(self):
-        return GLB.DEBUG_FILE_NAME + self.getTimeString() + ".csv"
+    def daily_validation(self):
+        return "Test"
+   
 
-    # use this function to print or save debug msg
-    def log(self, logType, msg):
-        if logType == GLB.DEBUG_DETAIL:
-            self.storeToFile(GLB.DEBUG_LOG_FILE_NAME, self.getTimeString() + " " + msg)
-        elif logType == GLB.DEBUG_SAVE:
-            self.storeToFile(GLB.DEBUG_LOG_FILE_NAME, self.getTimeString() + " " + msg)
-
-    
-
-    # set up rtc time in pic
-    def setupPIC24RTC(self):
-
-        # init retry attempt counter
-        retryAttempt = 0
-
-        currentPICResetCount = 0
-
-        # get sys time in hex
-        sysTimeHex = self.getSystemTimeInHex()
-        rtcSetupDone = False
-
-        while not rtcSetupDone:
-            for i in range(GLB.SET_RTC_YEAR, GLB.SET_RTC_SECOND + 1):
-                my16bitSPIData = self.get16bitSPIData(
-                    self.sendSPIDataWithMarking(self.createCommandData(i, sysTimeHex[i])))
-                SPIAck = self.removeSPIDataMarking(my16bitSPIData)
-
-                # no ack from pic that we set up rtc
-                if not SPIAck:
-                    retryAttempt = retryAttempt + 1
-                    self.logger.warning("rtc variable %s set up failed, retry setup in 1 second, attempt #%s" % (
-                        str(i), str(retryAttempt)))
-                    time.sleep(GLB.SETUP_FAILED_DELAY)
-
-                    # reset pic if max number of retry attempts is reached
-                    if retryAttempt >= GLB.MAX_RETRY_ATTEMPT:
-
-                        # reset system if max number of resets on pic still does not resolve issue
-                        if currentPICResetCount >= GLB.MAX_PIC_RESET:
-                            self.logger.critical("max number of pic reset for rtc setup reached, resetting system")
-                            # catastrophic failure, reset entire board and exit program
-                            self.resetSystem()
-                            sys.exit()
-
-                        # reset pic to see if we can fix the rtc setup issue
-                        else:
-                            self.logger.critical("max number of retry attempt for rtc setup is reached, resetting pic")
-                            self.resetPic24()
-                            time.sleep(GLB.NRESET_PIC24_HOLD_TIME * 2)
-                            retryAttempt = 0
-                            currentPICResetCount = currentPICResetCount + 1
-                    break
-
-                # rtc variable got set up correctly
-                self.logger.info("rtc variable %s set up correctly" % str(i))
-
-                # rtc setup is done
-                if i == GLB.SET_RTC_SECOND:
-                    self.logger.info("rtc set up successful")
-                    rtcSetupDone = True
-                    time.sleep(GLB.PIC_SETUP_DELAY)
-        return
-
-    def prepare_time_stamp(self):
-        # prepare time stamp in pic
-        timeStampDone = False
-
-        while not timeStampDone:
-            SPIAck = self.getPinReading(GLB.PREPARE_TS)
-
-            # no ack from pic that we set up time stamp
-            if not SPIAck:
-                retryAttempt = retryAttempt + 1
-                self.logger.warning(
-                    "prepare time stamp failed, retry setup in 1 second, attempt #%s" % str(retryAttempt))
-                time.sleep(GLB.SETUP_FAILED_DELAY)
-
-                # reset pic if max number of retry attempts is reached
-                if retryAttempt >= GLB.MAX_RETRY_ATTEMPT:
-
-                    # reset system if max number of resets on pic still does not resolve issue
-                    if currentPICResetCount >= GLB.MAX_PIC_RESET:
-                        self.logger.critical("max number of pic reset  for ts collection reached, resetting system")
-                        # catastrophic failure, reset entire board and exit program
-                        self.resetSystem()
-                        sys.exit()
-
-                    # reset pic to see if we can fix the ts collection issue
-                    else:
-                        self.logger.critical("max number of retry attempt for ts collection is reached, resetting pic")
-                        self.resetPic24()
-                        time.sleep(GLB.NRESET_PIC24_HOLD_TIME * 2)
-                        retryAttempt = 0
-                        currentPICResetCount = currentPICResetCount + 1
-
-            else:
-                self.logger.info("prepare time stamp success")
-                timeStampDone = True
-                time.sleep(GLB.PIC_SETUP_DELAY)
-                retryAttempt = 0
